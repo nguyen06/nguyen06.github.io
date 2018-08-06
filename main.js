@@ -6070,6 +6070,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../authentication/auth.guard */ "./src/app/authentication/auth.guard.ts");
 /* harmony import */ var _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../tense-details/tense-details.module */ "./src/app/tense-details/tense-details.module.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../register/register.component */ "./src/app/register/register.component.ts");
+
 
 
 
@@ -6086,6 +6088,7 @@ var routes = [
     { path: 'e-grammar', component: _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_4__["EGrammarComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_6__["AuthGuard"]] },
     { path: 'reading', component: _reading_reading_component__WEBPACK_IMPORTED_MODULE_2__["ReadingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_6__["AuthGuard"]] },
     { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"] },
+    { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_9__["RegisterComponent"] },
     {
         path: 'tenseDetails/:name',
         component: _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_5__["TenseDetailsComponent"],
@@ -6184,12 +6187,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./e-grammar/tense-detail/tense-detail.component */ "./src/app/e-grammar/tense-detail/tense-detail.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -6224,12 +6229,14 @@ var AppModule = /** @class */ (function () {
                 _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_14__["EGrammarComponent"],
                 _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_18__["TenseDetailComponent"],
                 _login_login_component__WEBPACK_IMPORTED_MODULE_19__["LoginComponent"],
+                _register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
                 _angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_6__["MDBBootstrapModule"].forRoot(),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
                 _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_10__["AppRoutingModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HttpClientModule"],
                 _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_16__["tenses"]
@@ -6680,7 +6687,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-5\">\n          <div class=\" card wow fadeIn animated\" data-wow-delay=\"0.3s\" style=\"visibility: visible; animation-name: fadeIn; animation-delay: 0.3s\">\n          <!-- Material form login -->\n            <div class=\"card-body\">\n              <form name=\"form\" (ngSubmit) = \"f.form.valid && login()\" #f=\"ngForm\" novalidate>\n                  <p class=\"h4 text-center\">Sign in</p>\n                  <div [ngClass] = \"{'has-error': f.submitted && !username.valid }\">\n                    <div class=\"md-form form-sm\"> <i class=\"fa fa-envelope prefix grey-text\"></i>\n                      <input type=\"text\" \n                            id=\"username\" \n                            class=\"form-control form-control-sm\"\n                            name=\"username\"\n                            [(ngModel)]=\"model.username\"\n                            #username=\"ngModel\"\n                            required\n                            >\n                      <label for=\"username\">Username</label>\n                    </div>\n                    <small *ngIf=\"f.submitted && !username.valid\" class=\"danger-text\">Username is required</small>\n                    <small *ngIf=\"usernameError\" class=\"danger-text\">Username is incorrect</small>\n\n                </div>\n\n                <!-- Material input password -->\n                <div class=\"form-group\" [ng-class]=\"{'has-error': f.submitted && !password.valid}\">\n                    <div class=\"md-form\">\n                        <i class=\"fa fa-lock prefix grey-text\"></i>\n                        <input type=\"password\" \n                               id=\"password\" \n                               class=\"form-control\"\n                               name=\"password\"\n                               [(ngModel)] = \"model.password\"\n                               #password=\"ngModel\"\n                               required\n                               >\n                        <label for=\"password\">Your password</label>\n                    </div>\n                    <small *ngIf=\"f.submitted && !password.valid\" class=\"danger-text\">Password is required</small>\n                    <small *ngIf=\"passwordError\" class=\"danger-text\">Password is incorrect</small>\n\n                </div>\n\n          \n                <div class=\"text-center mt-4\">\n                    <button [disabled]=\"loading\" class=\"btn btn-default\" type=\"submit\">Login</button>\n                    <img *ngIf=\"loading\" src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\" />\n                </div>\n              </form>\n\n              <div class=\"text-center mt-4\">\n                <hr>\n              </div>\n              <div class=\"text-right mt-4\">\n                  <span>Not a member? <a  style=\"color:#0d47a1\">SignUp</a></span><br>\n                  <span class=\"mt-4\">Forgot <a  style=\"color:#0d47a1\">password?</a> </span>\n                </div>\n            <!-- Material form login -->\n            </div>\n          </div>\n          </div>\n        </div>\n  </div>\n\n\n\n"
+module.exports = " <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-xl-5 mx-auto mt-5\">\n          <div class=\"card wow fadeIn animated\">\n          <!-- Material form login -->\n            <div class=\"card-body\">\n              <form name=\"form\" (ngSubmit) = \"f.form.valid && login()\" #f=\"ngForm\" novalidate>\n                  <p class=\"h4 text-center\">Sign in</p>\n                  <div [ngClass] = \"{'has-error': f.submitted && !username.valid }\">\n                    <div class=\"md-form form-sm\"> <i class=\"fa fa-envelope prefix grey-text\"></i>\n                      <input type=\"text\" \n                            id=\"username\" \n                            class=\"form-control form-control-sm\"\n                            name=\"username\"\n                            [(ngModel)]=\"model.username\"\n                            #username=\"ngModel\"\n                            required\n                            >\n                      <label for=\"username\">Username</label>\n                    </div>\n                    <small *ngIf=\"f.submitted && !username.valid\" class=\"danger-text\">Username is required</small>\n                    <small *ngIf=\"usernameError\" class=\"danger-text\">Username is incorrect</small>\n\n                </div>\n\n                <!-- Material input password -->\n                <div class=\"form-group\" [ng-class]=\"{'has-error': f.submitted && !password.valid}\">\n                    <div class=\"md-form\">\n                        <i class=\"fa fa-lock prefix grey-text\"></i>\n                        <input type=\"password\" \n                               id=\"password\" \n                               class=\"form-control\"\n                               name=\"password\"\n                               [(ngModel)] = \"model.password\"\n                               #password=\"ngModel\"\n                               required\n                               >\n                        <label for=\"password\">Your password</label>\n                    </div>\n                    <small *ngIf=\"f.submitted && !password.valid\" class=\"danger-text\">Password is required</small>\n                    <small *ngIf=\"passwordError\" class=\"danger-text\">Password is incorrect</small>\n\n                </div>\n\n          \n                <div class=\"text-center mt-4\">\n                    <button [disabled]=\"loading\" class=\"btn btn-default\" type=\"submit\">Login</button>\n                    <img *ngIf=\"loading\" src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\" />\n                </div>\n              </form>\n\n              <div class=\"text-center mt-4\">\n                <hr>\n              </div>\n              <div class=\"text-right mt-4\">\n                  <span>Not a member? <a [routerLink]=\"['/register']\" style=\"color:#0d47a1\">SignUp</a></span><br>\n                  <span class=\"mt-4\">Forgot <a  style=\"color:#0d47a1\">password?</a> </span>\n                </div>\n            <!-- Material form login -->\n            </div>\n          </div>\n          </div>\n        </div>\n  </div>\n\n\n\n"
 
 /***/ }),
 
@@ -6830,6 +6837,126 @@ var ReadingComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ReadingComponent);
     return ReadingComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/register/register.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xl-5 mx-auto mt-5\">\n      <div class=\" card wow fadeIn animated\">\n      <!-- Material form login -->\n        <div class=\"card-body\">\n          <form [formGroup]=\"registerForm\" (ngSubmit) = \"onSubmit()\">\n              <p class=\"h4 text-center\">Sign in</p>\n              <div class=\"form-group\">\n                <div class=\"md-form form-sm\"> <i class=\"fa fa-user prefix grey-text\"></i>\n                  <input type=\"text\" \n                        id=\"firstname\" \n                        class=\"form-control form-control-sm\"\n                        name=\"firstname\"\n                        formControlName=\"firstname\"\n                        required\n                        >\n                  <label for=\"firstname\">Firstname</label>\n                </div>\n              </div>\n\n              <div class=\"form-group\">\n                  <div class=\"md-form form-sm\"> <i class=\"fa fa-user prefix grey-text\"></i>\n                    <input type=\"text\" \n                          id=\"lastname\" \n                          class=\"form-control form-control-sm\"\n                          name=\"lastname\"\n                          formControlName=\"lastname\"\n                          required\n                          >\n                    <label for=\"lastname\">Lastname</label>\n                  </div>\n              </div>\n\n              <div class=\"form-group\">\n                  <div class=\"md-form form-sm\"> <i class=\"fa fa-user prefix grey-text\"></i>\n                    <input type=\"text\" \n                          id=\"username\" \n                          class=\"form-control form-control-sm\"\n                          name=\"username\"\n                          formControlName=\"username\"\n                          required\n                          >\n                    <label for=\"username\">Username</label>\n                  </div>\n              </div>\n\n              <div class=\"form-group\">\n                  <div class=\"md-form form-sm\"> <i class=\"fa fa-envelope prefix grey-text\"></i>\n                    <input type=\"email\" \n                          id=\"email\" \n                          class=\"form-control form-control-sm\"\n                          name=\"email\"\n                          formControlName=\"email\"\n                          required\n                          >\n                    <label for=\"email\">Email</label>\n                    <small *ngIf=\"existEmail\" class=\"danger-text\">Email is already used</small>\n                  </div>\n                 \n              </div>\n\n              <!-- Material input password -->\n              <div class=\"form-group\" [ng-class]=\"{'has-error': f.submitted && !password.valid}\">\n                  <div class=\"md-form\">\n                      <i class=\"fa fa-lock prefix grey-text\"></i>\n                      <input type=\"password\" \n                            id=\"password\" \n                            class=\"form-control\"\n                            name=\"password\"\n                            formControlName=\"password\"\n                            required\n                            >\n                      <label for=\"password\">Password</label>\n                  </div>\n            </div>\n\n      \n            <div class=\"text-center mt-4\">\n                <button [disabled]=\"loading\" class=\"btn btn-default\" type=\"submit\">SignUp</button>\n                <img *ngIf=\"loading\" src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\" />\n            </div>\n          </form>\n\n          <div class=\"text-center mt-4\">\n            <hr>\n          </div>\n          <div class=\"text-right mt-4\">\n              <span>Is already member? <a [routerLink]=\"['/login']\" style=\"color:#0d47a1\">SignIn</a></span>\n            </div>\n        <!-- Material form login -->\n        </div>\n      </div>\n      </div>\n    </div>\n</div>\n\n\n\n"
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.scss":
+/*!**************************************************!*\
+  !*** ./src/app/register/register.component.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".btn-default {\n  background-color: #0d47a1 !important; }\n\n.danger-text {\n  color: #ff3547; }\n"
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/register/register.component.ts ***!
+  \************************************************/
+/*! exports provided: RegisterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _services_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/index */ "./src/app/services/index.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var RegisterComponent = /** @class */ (function () {
+    function RegisterComponent(formBuilder, router, userService) {
+        this.formBuilder = formBuilder;
+        this.router = router;
+        this.userService = userService;
+        this.loading = false;
+        this.submitted = false;
+        this.existEmail = false;
+        this.error = false;
+    }
+    RegisterComponent.prototype.ngOnInit = function () {
+        this.registerForm = this.formBuilder.group({
+            firstname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            lastname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            username: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            password: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(6)]]
+        });
+    };
+    Object.defineProperty(RegisterComponent.prototype, "f", {
+        // convenience getter for easy access to form fields
+        get: function () { return this.registerForm.controls; },
+        enumerable: true,
+        configurable: true
+    });
+    RegisterComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.submitted = true;
+        // stop here if form is invalid
+        if (this.registerForm.invalid) {
+            return;
+        }
+        this.loading = true;
+        this.userService.register(this.registerForm.value)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["first"])())
+            .subscribe(function (data) {
+            if (data.status === 'false' && data.message.email === 'false') {
+                _this.existEmail = true;
+                _this.loading = false;
+            }
+            else if (data.message.email === 'notchecked') {
+                _this.error = true;
+                _this.loading = false;
+            }
+            else {
+                _this.router.navigate(['/login']);
+            }
+        }, function (error) {
+            _this.loading = false;
+        });
+    };
+    RegisterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-login',
+            template: __webpack_require__(/*! ./register.component.html */ "./src/app/register/register.component.html"),
+            styles: [__webpack_require__(/*! ./register.component.scss */ "./src/app/register/register.component.scss")]
+        }),
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({ template: __webpack_require__(/*! ./register.component.html */ "./src/app/register/register.component.html") }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _services_index__WEBPACK_IMPORTED_MODULE_4__["UserService"]])
+    ], RegisterComponent);
+    return RegisterComponent;
 }());
 
 
@@ -6997,8 +7124,8 @@ var UserService = /** @class */ (function () {
     UserService.prototype.getById = function (id) {
         return this.http.get('./users/users/' + id);
     };
-    UserService.prototype.create = function (user) {
-        return this.http.post('/users/register', user);
+    UserService.prototype.register = function (user) {
+        return this.http.post('https://pure-tor-72835.herokuapp.com/users/register', user);
     };
     UserService.prototype.update = function (user) {
         return this.http.put('/user/users' + user.id, user);
