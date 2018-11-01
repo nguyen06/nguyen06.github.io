@@ -5994,7 +5994,7 @@ function webpackEmptyAsyncContext(req) {
 	// Here Promise.resolve().then() is used instead of new Promise() to prevent
 	// uncaught exception popping up in devtools
 	return Promise.resolve().then(function() {
-		var e = new Error('Cannot find module "' + req + '".');
+		var e = new Error("Cannot find module '" + req + "'");
 		e.code = 'MODULE_NOT_FOUND';
 		throw e;
 	});
@@ -6066,11 +6066,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reading_reading_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../reading/reading.component */ "./src/app/reading/reading.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../e-grammar/e-grammar.component */ "./src/app/e-grammar/e-grammar.component.ts");
-/* harmony import */ var _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../tense-details/tense-details.component */ "./src/app/tense-details/tense-details.component.ts");
-/* harmony import */ var _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../authentication/auth.guard */ "./src/app/authentication/auth.guard.ts");
-/* harmony import */ var _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../tense-details/tense-details.module */ "./src/app/tense-details/tense-details.module.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../i-reading/i-reading.component */ "./src/app/i-reading/i-reading.component.ts");
+/* harmony import */ var _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../tense-details/tense-details.component */ "./src/app/tense-details/tense-details.component.ts");
+/* harmony import */ var _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../authentication/auth.guard */ "./src/app/authentication/auth.guard.ts");
+/* harmony import */ var _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../tense-details/tense-details.module */ "./src/app/tense-details/tense-details.module.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../listening/elementary/elementary.component */ "./src/app/listening/elementary/elementary.component.ts");
+
+
 
 
 
@@ -6082,17 +6086,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_6__["AuthGuard"]] },
+    { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
     { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
-    { path: 'writing', component: _writing_writing_component__WEBPACK_IMPORTED_MODULE_1__["WritingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_6__["AuthGuard"]] },
-    { path: 'e-grammar', component: _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_4__["EGrammarComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_6__["AuthGuard"]] },
-    { path: 'reading', component: _reading_reading_component__WEBPACK_IMPORTED_MODULE_2__["ReadingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_6__["AuthGuard"]] },
-    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"] },
-    { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_9__["RegisterComponent"] },
+    { path: 'writing', component: _writing_writing_component__WEBPACK_IMPORTED_MODULE_1__["WritingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
+    { path: 'e-grammar', component: _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_4__["EGrammarComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
+    { path: 'reading', component: _reading_reading_component__WEBPACK_IMPORTED_MODULE_2__["ReadingComponent"], canActivate: [_authentication_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
+    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"] },
+    { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_10__["RegisterComponent"] },
+    { path: 'listen-elementary', component: _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_11__["ElementaryComponent"] },
+    { path: 'i-reading', component: _i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_5__["IReadingComponent"] },
     {
         path: 'tenseDetails/:name',
-        component: _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_5__["TenseDetailsComponent"],
-        children: _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_7__["routes"]
+        component: _tense_details_tense_details_component__WEBPACK_IMPORTED_MODULE_6__["TenseDetailsComponent"],
+        children: _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_8__["routes"]
     }
 ];
 var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(routes);
@@ -6118,7 +6124,7 @@ module.exports = "<app-header></app-header>\n<router-outlet></router-outlet>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
 
 /***/ }),
 
@@ -6173,27 +6179,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _services_tense_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/tense.service */ "./src/app/services/tense.service.ts");
 /* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/authentication.service */ "./src/app/services/authentication.service.ts");
-/* harmony import */ var _angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../angular-bootstrap-md */ "./angular-bootstrap-md/esm5/angular-bootstrap-md.es5.js");
-/* harmony import */ var _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./authentication/auth.guard */ "./src/app/authentication/auth.guard.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app-routing/app-routing.module */ "./src/app/app-routing/app-routing.module.ts");
-/* harmony import */ var _writing_writing_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./writing/writing.component */ "./src/app/writing/writing.component.ts");
-/* harmony import */ var _reading_reading_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./reading/reading.component */ "./src/app/reading/reading.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./e-grammar/e-grammar.component */ "./src/app/e-grammar/e-grammar.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./tense-details/tense-details.module */ "./src/app/tense-details/tense-details.module.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./e-grammar/tense-detail/tense-detail.component */ "./src/app/e-grammar/tense-detail/tense-detail.component.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/reading/reading-service.service */ "./src/app/services/reading/reading-service.service.ts");
+/* harmony import */ var _angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../angular-bootstrap-md */ "./angular-bootstrap-md/esm5/angular-bootstrap-md.es5.js");
+/* harmony import */ var _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./authentication/auth.guard */ "./src/app/authentication/auth.guard.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app-routing/app-routing.module */ "./src/app/app-routing/app-routing.module.ts");
+/* harmony import */ var _writing_writing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./writing/writing.component */ "./src/app/writing/writing.component.ts");
+/* harmony import */ var _reading_reading_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./reading/reading.component */ "./src/app/reading/reading.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./e-grammar/e-grammar.component */ "./src/app/e-grammar/e-grammar.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./tense-details/tense-details.module */ "./src/app/tense-details/tense-details.module.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./e-grammar/tense-detail/tense-detail.component */ "./src/app/e-grammar/tense-detail/tense-detail.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _listening_listening_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./listening/listening.component */ "./src/app/listening/listening.component.ts");
+/* harmony import */ var _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./listening/elementary/elementary.component */ "./src/app/listening/elementary/elementary.component.ts");
+/* harmony import */ var _listening_elementary_lesson_detail_lesson_detail_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./listening/elementary/lesson-detail/lesson-detail.component */ "./src/app/listening/elementary/lesson-detail/lesson-detail.component.ts");
+/* harmony import */ var _i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./i-reading/i-reading.component */ "./src/app/i-reading/i-reading.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
 
 
 
@@ -6222,29 +6238,34 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _writing_writing_component__WEBPACK_IMPORTED_MODULE_11__["WritingComponent"],
-                _header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"],
-                _reading_reading_component__WEBPACK_IMPORTED_MODULE_12__["ReadingComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_13__["HomeComponent"],
-                _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_14__["EGrammarComponent"],
-                _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_18__["TenseDetailComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_19__["LoginComponent"],
-                _register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"],
+                _writing_writing_component__WEBPACK_IMPORTED_MODULE_12__["WritingComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"],
+                _reading_reading_component__WEBPACK_IMPORTED_MODULE_13__["ReadingComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"],
+                _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_15__["EGrammarComponent"],
+                _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_19__["TenseDetailComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_20__["LoginComponent"],
+                _register_register_component__WEBPACK_IMPORTED_MODULE_21__["RegisterComponent"],
+                _listening_listening_component__WEBPACK_IMPORTED_MODULE_22__["ListeningComponent"],
+                _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_23__["ElementaryComponent"],
+                _listening_elementary_lesson_detail_lesson_detail_component__WEBPACK_IMPORTED_MODULE_24__["LessonDetailComponent"],
+                _i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_25__["IReadingComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
-                _angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_6__["MDBBootstrapModule"].forRoot(),
-                _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
-                _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_10__["AppRoutingModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HttpClientModule"],
-                _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_16__["tenses"]
+                _angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_7__["MDBBootstrapModule"].forRoot(),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["ReactiveFormsModule"],
+                _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_11__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"],
+                _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_17__["tenses"]
             ],
             providers: [
-                { provide: _angular_common__WEBPACK_IMPORTED_MODULE_17__["APP_BASE_HREF"], useValue: '/' },
-                _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"],
+                { provide: _angular_common__WEBPACK_IMPORTED_MODULE_18__["APP_BASE_HREF"], useValue: '/' },
+                _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"],
                 _services_tense_service__WEBPACK_IMPORTED_MODULE_4__["TenseService"],
+                _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_6__["ReadingService"],
                 _services_authentication_service__WEBPACK_IMPORTED_MODULE_5__["authenticationService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
@@ -6322,7 +6343,7 @@ module.exports = "<div class=\"container\" >\n        <div class=\"btn-group pt-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pt-4 {\n  padding-top: 2rem !important; }\n\n.container {\n  text-align: center; }\n\n.ml-15 {\n  padding-right: 15px; }\n\n.pt-50 {\n  padding-top: 20rem; }\n\n.btn-rounded {\n  border-radius: 15px; }\n\n.text-justify {\n  border: 2px; }\n\n.blue-gradient {\n  color: #514A9D; }\n\n.pat-3 {\n  padding-top: 10px; }\n\n.left {\n  text-align: left; }\n\n.btn-size {\n  padding: 15px 32px;\n  margin-bottom: 10px; }\n\n.column {\n  float: left;\n  width: 50%; }\n\n.pl-5 {\n  float: left;\n  width: 70%; }\n\n.btn.btn-lg {\n  padding: 1rem 2.0rem;\n  font-size: 0.50rem; }\n\n@media (min-width: 320px) {\n  .navbar {\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -ms-flex-align: center;\n        align-items: center;\n    -ms-flex-pack: justify;\n        justify-content: space-between;\n    padding: 0.5rem 0.5rem; }\n  .input-group {\n    width: 100%;\n    margin: auto; }\n  .btn.btn-lg[_ngcontent-c2] {\n    padding: 1rem 1.0rem;\n    font-size: 0.5rem; }\n  .pt-4 {\n    padding-top: 1rem !important; } }\n\n@media (min-width: 768px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4 {\n    padding-top: 7rem !important; } }\n\n@media (min-width: 992px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4[_ngcontent-c2] {\n    padding-top: 4rem !important; } }\n"
+module.exports = ".pt-4 {\n  padding-top: 2rem !important; }\n\n.container {\n  text-align: center; }\n\n.ml-15 {\n  padding-right: 15px; }\n\n.pt-50 {\n  padding-top: 20rem; }\n\n.btn-rounded {\n  border-radius: 15px; }\n\n.text-justify {\n  border: 2px; }\n\n.blue-gradient {\n  color: #514A9D; }\n\n.pat-3 {\n  padding-top: 10px; }\n\n.left {\n  text-align: left; }\n\n.btn-size {\n  padding: 15px 32px;\n  margin-bottom: 10px; }\n\n.column {\n  float: left;\n  width: 50%; }\n\n.pl-5 {\n  float: left;\n  width: 70%; }\n\n.btn.btn-lg {\n  padding: 1rem 2.0rem;\n  font-size: 0.50rem; }\n\n@media (min-width: 320px) {\n  .navbar {\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -ms-flex-align: center;\n        align-items: center;\n    -ms-flex-pack: justify;\n        justify-content: space-between;\n    padding: 0.5rem 0.5rem; }\n  .input-group {\n    width: 100%;\n    margin: auto; }\n  .btn.btn-lg[_ngcontent-c2] {\n    padding: 1rem 1.0rem;\n    font-size: 0.5rem; }\n  .pt-4 {\n    padding-top: 6rem !important; } }\n\n@media (min-width: 768px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4 {\n    padding-top: 7rem !important; } }\n\n@media (min-width: 992px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4[_ngcontent-c2] {\n    padding-top: 4rem !important; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvZS1ncmFtbWFyL2UtZ3JhbW1hci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLDZCQUE0QixFQUMvQjs7QUFDRDtFQUNJLG1CQUFrQixFQUNyQjs7QUFDRDtFQUNJLG9CQUFtQixFQUN0Qjs7QUFDRDtFQUNJLG1CQUFpQixFQUNwQjs7QUFDRDtFQUNJLG9CQUFtQixFQUN0Qjs7QUFDRDtFQUNJLFlBQVcsRUFDZDs7QUFDRDtFQUNJLGVBQWMsRUFDakI7O0FBQ0Q7RUFDSSxrQkFBaUIsRUFFcEI7O0FBQ0Q7RUFDSSxpQkFBZ0IsRUFDbkI7O0FBQ0Q7RUFDSSxtQkFBa0I7RUFDbEIsb0JBQW1CLEVBQ3RCOztBQUNEO0VBQ0ksWUFBVztFQUNYLFdBQVUsRUFDYjs7QUFDRDtFQUNJLFlBQVc7RUFDWCxXQUFVLEVBQ2I7O0FBR0Q7RUFDSSxxQkFBb0I7RUFDcEIsbUJBQWtCLEVBQ3JCOztBQUVEO0VBQ0k7SUFDSSxvQkFBZTtRQUFmLGdCQUFlO0lBQ2YsdUJBQW1CO1FBQW5CLG9CQUFtQjtJQUNuQix1QkFBOEI7UUFBOUIsK0JBQThCO0lBQzlCLHVCQUFzQixFQUN6QjtFQUNEO0lBQ0ksWUFBVztJQUNYLGFBQVksRUFDZjtFQUVEO0lBQ1EscUJBQW9CO0lBQ3BCLGtCQUFpQixFQUN4QjtFQUVEO0lBQ0ksNkJBQTRCLEVBQy9CLEVBQUE7O0FBTUw7RUFDSTtJQUNJLG1CQUFrQjtJQUNsQixxQkFBYTtJQUFiLGNBQWE7SUFDYixvQkFBZTtRQUFmLGdCQUFlO0lBQ2YsMEJBQTBCO0lBQzFCLFdBQVU7SUFDVixhQUFZLEVBQ2Y7RUFDRDtJQUNJLDZCQUE0QixFQUMvQixFQUFBOztBQUlMO0VBQ0k7SUFDSSxtQkFBa0I7SUFDbEIscUJBQWE7SUFBYixjQUFhO0lBQ2Isb0JBQWU7UUFBZixnQkFBZTtJQUNmLDBCQUEwQjtJQUMxQixXQUFVO0lBQ1YsYUFBWSxFQUNmO0VBQ0Q7SUFDSSw2QkFBNEIsRUFDL0IsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2UtZ3JhbW1hci9lLWdyYW1tYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHQtNHtcbiAgICBwYWRkaW5nLXRvcDogMnJlbSAhaW1wb3J0YW50O1xufVxuLmNvbnRhaW5lcntcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4ubWwtMTV7XG4gICAgcGFkZGluZy1yaWdodDogMTVweDtcbn1cbi5wdC01MHtcbiAgICBwYWRkaW5nLXRvcDoyMHJlbTtcbn1cbi5idG4tcm91bmRlZHtcbiAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xufVxuLnRleHQtanVzdGlmeSB7XG4gICAgYm9yZGVyOiAycHg7XG59XG4uYmx1ZS1ncmFkaWVudHtcbiAgICBjb2xvcjogIzUxNEE5RDtcbn1cbi5wYXQtM3tcbiAgICBwYWRkaW5nLXRvcDogMTBweDs7XG4gICAgXG59XG4ubGVmdHtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xufVxuLmJ0bi1zaXple1xuICAgIHBhZGRpbmc6IDE1cHggMzJweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuLmNvbHVtbntcbiAgICBmbG9hdDogbGVmdDtcbiAgICB3aWR0aDogNTAlO1xufVxuLnBsLTV7XG4gICAgZmxvYXQ6IGxlZnQ7XG4gICAgd2lkdGg6IDcwJTtcbn1cblxuXG4uYnRuLmJ0bi1sZyB7XG4gICAgcGFkZGluZzogMXJlbSAyLjByZW07XG4gICAgZm9udC1zaXplOiAwLjUwcmVtO1xufVxuLy8gU21hbGwgZGV2aWNlcyAobGFuZHNjYXBlIHBob25lcywgNTc2cHggYW5kIHVwKVxuQG1lZGlhIChtaW4td2lkdGg6IDMyMHB4KSB7IFxuICAgIC5uYXZiYXIge1xuICAgICAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgcGFkZGluZzogMC41cmVtIDAuNXJlbTtcbiAgICB9XG4gICAgLmlucHV0LWdyb3VwIHtcbiAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIG1hcmdpbjogYXV0bztcbiAgICB9XG5cbiAgICAuYnRuLmJ0bi1sZ1tfbmdjb250ZW50LWMyXSB7XG4gICAgICAgICAgICBwYWRkaW5nOiAxcmVtIDEuMHJlbTtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMC41cmVtO1xuICAgIH1cbiAgICBcbiAgICAucHQtNHtcbiAgICAgICAgcGFkZGluZy10b3A6IDZyZW0gIWltcG9ydGFudDtcbiAgICB9XG5cblxuIH1cblxuLy8gTWVkaXVtIGRldmljZXMgKHRhYmxldHMsIDc2OHB4IGFuZCB1cClcbkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkgeyBcbiAgICAuaW5wdXQtZ3JvdXAge1xuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICAgICAgLyogYWxpZ24taXRlbXM6IGNlbnRlcjsgKi9cbiAgICAgICAgd2lkdGg6IDcwJTtcbiAgICAgICAgbWFyZ2luOiBhdXRvO1xuICAgIH1cbiAgICAucHQtNCB7XG4gICAgICAgIHBhZGRpbmctdG9wOiA3cmVtICFpbXBvcnRhbnQ7XG4gICAgfVxuIH1cblxuLy8gTGFyZ2UgZGV2aWNlcyAoZGVza3RvcHMsIDk5MnB4IGFuZCB1cClcbkBtZWRpYSAobWluLXdpZHRoOiA5OTJweCkgeyBcbiAgICAuaW5wdXQtZ3JvdXAge1xuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICAgICAgLyogYWxpZ24taXRlbXM6IGNlbnRlcjsgKi9cbiAgICAgICAgd2lkdGg6IDcwJTtcbiAgICAgICAgbWFyZ2luOiBhdXRvO1xuICAgIH1cbiAgICAucHQtNFtfbmdjb250ZW50LWMyXSB7XG4gICAgICAgIHBhZGRpbmctdG9wOiA0cmVtICFpbXBvcnRhbnQ7XG4gICAgfVxuIH1cblxuLy8gRXh0cmEgbGFyZ2UgZGV2aWNlcyAobGFyZ2UgZGVza3RvcHMsIDEyMDBweCBhbmQgdXApXG5AbWVkaWEgKG1pbi13aWR0aDogMTIwMHB4KSB7ICB9Il19 */"
 
 /***/ }),
 
@@ -6407,7 +6428,7 @@ module.exports = "<h2 class=\"h1-responsive font-weight-bold my-4\">{{tenName}}<
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pt-4 {\n  padding-top: 9rem !important; }\n\n.container {\n  text-align: center; }\n\n.ml-15 {\n  padding-right: 15px; }\n\n.pt-50 {\n  padding-top: 20rem; }\n\n.btn-rounded {\n  border-radius: 15px; }\n\n.text-justify {\n  border: 2px; }\n\n.blue-gradient {\n  color: #514A9D; }\n\n.pat-3 {\n  padding-top: 10px; }\n\n.left {\n  text-align: left; }\n\n.btn-size {\n  padding: 15px 32px;\n  margin-bottom: 10px; }\n\n.column {\n  float: left;\n  width: 50%; }\n\n.pl-5 {\n  float: left;\n  width: 70%; }\n\n.btn.btn-lg {\n  padding: 1rem 2.0rem;\n  font-size: 0.94rem; }\n\n@media (min-width: 320px) {\n  .navbar {\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -ms-flex-align: center;\n        align-items: center;\n    -ms-flex-pack: justify;\n        justify-content: space-between;\n    padding: 0.5rem 0.5rem; }\n  .input-group .form-control {\n    margin: 0;\n    padding-top: 5px;\n    padding-bottom: 5px;\n    padding-left: 1.2rem; }\n  .btn.btn-lg {\n    padding: 1rem 1.0rem;\n    font-size: 0.50rem; }\n  .lead {\n    font-size: 1rem;\n    font-weight: 300; }\n  .h1-responsive {\n    font-size: 100%; }\n  .btn {\n    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\n    padding: 0.56rem 1.14rem;\n    font-size: 0.65rem;\n    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n    /* margin: 0.375rem; */\n    border-radius: 0.5rem;\n    cursor: pointer;\n    text-transform: uppercase;\n    white-space: normal;\n    word-wrap: break-word; } }\n\n@media (min-width: 768px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4[_ngcontent-c2] {\n    padding-top: 9rem !important; } }\n\n@media (min-width: 992px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; } }\n"
+module.exports = ".pt-4 {\n  padding-top: 9rem !important; }\n\n.container {\n  text-align: center; }\n\n.ml-15 {\n  padding-right: 15px; }\n\n.pt-50 {\n  padding-top: 20rem; }\n\n.btn-rounded {\n  border-radius: 15px; }\n\n.text-justify {\n  border: 2px; }\n\n.blue-gradient {\n  color: #514A9D; }\n\n.pat-3 {\n  padding-top: 10px; }\n\n.left {\n  text-align: left; }\n\n.btn-size {\n  padding: 15px 32px;\n  margin-bottom: 10px; }\n\n.column {\n  float: left;\n  width: 50%; }\n\n.pl-5 {\n  float: left;\n  width: 70%; }\n\n.btn.btn-lg {\n  padding: 1rem 2.0rem;\n  font-size: 0.94rem; }\n\n@media (min-width: 320px) {\n  .navbar {\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -ms-flex-align: center;\n        align-items: center;\n    -ms-flex-pack: justify;\n        justify-content: space-between;\n    padding: 0.5rem 0.5rem; }\n  .input-group .form-control {\n    margin: 0;\n    padding-top: 5px;\n    padding-bottom: 5px;\n    padding-left: 1.2rem; }\n  .btn.btn-lg {\n    padding: 1rem 1.0rem;\n    font-size: 0.50rem; }\n  .lead {\n    font-size: 1rem;\n    font-weight: 300; }\n  .h1-responsive {\n    font-size: 100%; }\n  .btn {\n    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\n    padding: 0.56rem 1.14rem;\n    font-size: 0.65rem;\n    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n    /* margin: 0.375rem; */\n    border-radius: 0.5rem;\n    cursor: pointer;\n    text-transform: uppercase;\n    white-space: normal;\n    word-wrap: break-word; } }\n\n@media (min-width: 768px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4[_ngcontent-c2] {\n    padding-top: 9rem !important; } }\n\n@media (min-width: 992px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvZS1ncmFtbWFyL3RlbnNlLWRldGFpbC90ZW5zZS1kZXRhaWwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSw2QkFBNEIsRUFDL0I7O0FBQ0Q7RUFDSSxtQkFBa0IsRUFDckI7O0FBQ0Q7RUFDSSxvQkFBbUIsRUFDdEI7O0FBQ0Q7RUFDSSxtQkFBaUIsRUFDcEI7O0FBQ0Q7RUFDSSxvQkFBbUIsRUFDdEI7O0FBQ0Q7RUFDSSxZQUFXLEVBQ2Q7O0FBQ0Q7RUFDSSxlQUFjLEVBQ2pCOztBQUNEO0VBQ0ksa0JBQWlCLEVBRXBCOztBQUNEO0VBQ0ksaUJBQWdCLEVBQ25COztBQUNEO0VBQ0ksbUJBQWtCO0VBQ2xCLG9CQUFtQixFQUN0Qjs7QUFDRDtFQUNJLFlBQVc7RUFDWCxXQUFVLEVBQ2I7O0FBQ0Q7RUFDSSxZQUFXO0VBQ1gsV0FBVSxFQUNiOztBQUVEO0VBQ0kscUJBQW9CO0VBQ3BCLG1CQUFrQixFQUNyQjs7QUFFRDtFQUNJO0lBQ0ksb0JBQWU7UUFBZixnQkFBZTtJQUNmLHVCQUFtQjtRQUFuQixvQkFBbUI7SUFDbkIsdUJBQThCO1FBQTlCLCtCQUE4QjtJQUM5Qix1QkFBc0IsRUFDekI7RUFDRDtJQUNJLFVBQVM7SUFDVCxpQkFBZ0I7SUFDaEIsb0JBQW1CO0lBQ25CLHFCQUFvQixFQUN2QjtFQUNEO0lBQ0kscUJBQW9CO0lBQ3BCLG1CQUFrQixFQUNyQjtFQUNEO0lBQ0ksZ0JBQWU7SUFDZixpQkFBZ0IsRUFDbkI7RUFDRDtJQUNJLGdCQUFlLEVBQ2xCO0VBQ0Q7SUFDSSw4RUFBNkU7SUFDN0UseUJBQXdCO0lBQ3hCLG1CQUFrQjtJQUNsQixzSUFBcUk7SUFDckksdUJBQXVCO0lBQ3ZCLHNCQUFxQjtJQUNyQixnQkFBZTtJQUNmLDBCQUF5QjtJQUN6QixvQkFBbUI7SUFDbkIsc0JBQXFCLEVBQ3hCLEVBQUE7O0FBS0w7RUFDSTtJQUNJLG1CQUFrQjtJQUNsQixxQkFBYTtJQUFiLGNBQWE7SUFDYixvQkFBZTtRQUFmLGdCQUFlO0lBQ2YsMEJBQTBCO0lBQzFCLFdBQVU7SUFDVixhQUFZLEVBQ2Y7RUFDRDtJQUNJLDZCQUE0QixFQUMvQixFQUFBOztBQUlMO0VBQ0k7SUFDSSxtQkFBa0I7SUFDbEIscUJBQWE7SUFBYixjQUFhO0lBQ2Isb0JBQWU7UUFBZixnQkFBZTtJQUNmLDBCQUEwQjtJQUMxQixXQUFVO0lBQ1YsYUFBWSxFQUNmLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9lLWdyYW1tYXIvdGVuc2UtZGV0YWlsL3RlbnNlLWRldGFpbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wdC00e1xuICAgIHBhZGRpbmctdG9wOiA5cmVtICFpbXBvcnRhbnQ7XG59XG4uY29udGFpbmVye1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5tbC0xNXtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxNXB4O1xufVxuLnB0LTUwe1xuICAgIHBhZGRpbmctdG9wOjIwcmVtO1xufVxuLmJ0bi1yb3VuZGVke1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG59XG4udGV4dC1qdXN0aWZ5IHtcbiAgICBib3JkZXI6IDJweDtcbn1cbi5ibHVlLWdyYWRpZW50e1xuICAgIGNvbG9yOiAjNTE0QTlEO1xufVxuLnBhdC0ze1xuICAgIHBhZGRpbmctdG9wOiAxMHB4OztcbiAgICBcbn1cbi5sZWZ0e1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG59XG4uYnRuLXNpemV7XG4gICAgcGFkZGluZzogMTVweCAzMnB4O1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG4uY29sdW1ue1xuICAgIGZsb2F0OiBsZWZ0O1xuICAgIHdpZHRoOiA1MCU7XG59XG4ucGwtNXtcbiAgICBmbG9hdDogbGVmdDtcbiAgICB3aWR0aDogNzAlO1xufVxuXG4uYnRuLmJ0bi1sZyB7XG4gICAgcGFkZGluZzogMXJlbSAyLjByZW07XG4gICAgZm9udC1zaXplOiAwLjk0cmVtO1xufVxuLy8gU21hbGwgZGV2aWNlcyAobGFuZHNjYXBlIHBob25lcywgNTc2cHggYW5kIHVwKVxuQG1lZGlhIChtaW4td2lkdGg6IDMyMHB4KSB7IFxuICAgIC5uYXZiYXIge1xuICAgICAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgcGFkZGluZzogMC41cmVtIDAuNXJlbTtcbiAgICB9XG4gICAgLmlucHV0LWdyb3VwIC5mb3JtLWNvbnRyb2wge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIHBhZGRpbmctdG9wOiA1cHg7XG4gICAgICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgICAgIHBhZGRpbmctbGVmdDogMS4ycmVtO1xuICAgIH1cbiAgICAuYnRuLmJ0bi1sZyB7XG4gICAgICAgIHBhZGRpbmc6IDFyZW0gMS4wcmVtO1xuICAgICAgICBmb250LXNpemU6IDAuNTByZW07XG4gICAgfVxuICAgIC5sZWFkIHtcbiAgICAgICAgZm9udC1zaXplOiAxcmVtO1xuICAgICAgICBmb250LXdlaWdodDogMzAwO1xuICAgIH1cbiAgICAuaDEtcmVzcG9uc2l2ZSB7XG4gICAgICAgIGZvbnQtc2l6ZTogMTAwJTtcbiAgICB9XG4gICAgLmJ0biB7XG4gICAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDVweCAwIHJnYmEoMCwgMCwgMCwgMC4xNiksIDAgMnB4IDEwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xuICAgICAgICBwYWRkaW5nOiAwLjU2cmVtIDEuMTRyZW07XG4gICAgICAgIGZvbnQtc2l6ZTogMC42NXJlbTtcbiAgICAgICAgdHJhbnNpdGlvbjogY29sb3IgMC4xNXMgZWFzZS1pbi1vdXQsIGJhY2tncm91bmQtY29sb3IgMC4xNXMgZWFzZS1pbi1vdXQsIGJvcmRlci1jb2xvciAwLjE1cyBlYXNlLWluLW91dCwgYm94LXNoYWRvdyAwLjE1cyBlYXNlLWluLW91dDtcbiAgICAgICAgLyogbWFyZ2luOiAwLjM3NXJlbTsgKi9cbiAgICAgICAgYm9yZGVyLXJhZGl1czogMC41cmVtO1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gICAgICAgIHdoaXRlLXNwYWNlOiBub3JtYWw7XG4gICAgICAgIHdvcmQtd3JhcDogYnJlYWstd29yZDtcbiAgICB9XG5cbiB9XG5cbi8vIE1lZGl1bSBkZXZpY2VzICh0YWJsZXRzLCA3NjhweCBhbmQgdXApXG5AbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIHsgXG4gICAgLmlucHV0LWdyb3VwIHtcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgICAgIC8qIGFsaWduLWl0ZW1zOiBjZW50ZXI7ICovXG4gICAgICAgIHdpZHRoOiA3MCU7XG4gICAgICAgIG1hcmdpbjogYXV0bztcbiAgICB9XG4gICAgLnB0LTRbX25nY29udGVudC1jMl0ge1xuICAgICAgICBwYWRkaW5nLXRvcDogOXJlbSAhaW1wb3J0YW50O1xuICAgIH1cbiB9XG5cbi8vIExhcmdlIGRldmljZXMgKGRlc2t0b3BzLCA5OTJweCBhbmQgdXApXG5AbWVkaWEgKG1pbi13aWR0aDogOTkycHgpIHsgXG4gICAgLmlucHV0LWdyb3VwIHtcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgICAgIC8qIGFsaWduLWl0ZW1zOiBjZW50ZXI7ICovXG4gICAgICAgIHdpZHRoOiA3MCU7XG4gICAgICAgIG1hcmdpbjogYXV0bztcbiAgICB9XG4gfVxuXG4vLyBFeHRyYSBsYXJnZSBkZXZpY2VzIChsYXJnZSBkZXNrdG9wcywgMTIwMHB4IGFuZCB1cClcbkBtZWRpYSAobWluLXdpZHRoOiAxMjAwcHgpIHsgIH0iXX0= */"
 
 /***/ }),
 
@@ -6456,6 +6477,7 @@ var TenseDetailComponent = /** @class */ (function () {
         ];
     }
     TenseDetailComponent.prototype.ngOnChanges = function () {
+        debugger;
         for (var _i = 0, _a = this.tense_config; _i < _a.length; _i++) {
             var entry = _a[_i];
             if (entry.name === this.tenName) {
@@ -6484,6 +6506,7 @@ var TenseDetailComponent = /** @class */ (function () {
     };
     Object.defineProperty(TenseDetailComponent.prototype, "questions", {
         get: function () {
+            debugger;
             return (this.quiz.questions) ? this.quiz.questions.slice(this.page.index, this.page.index + this.page.size) : [];
         },
         enumerable: true,
@@ -6515,6 +6538,7 @@ var TenseDetailComponent = /** @class */ (function () {
         }
     };
     TenseDetailComponent.prototype.goto = function (index) {
+        debugger;
         if (index >= 0 && index < this.page.num) {
             this.correct = this.quiz.questions[index].answered.corrected;
             this.ansOptId = this.quiz.questions[index].answered.option_id;
@@ -6561,7 +6585,7 @@ var TenseDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--Main Navigation-->\n<header>\n\n  <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark primary-color-dark scrolling-navbar\">\n      <a class=\"navbar-brand\" routerLink=\"/home\"><strong><h2>English tutorials</h2></strong></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n          <ul class=\"navbar-nav mr-auto\" >\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Listening<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/writing\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Speaking<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Reading<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/reading\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Writing<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n                <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\">\n                Grammar<span class=\"caret\"></span></a>\n                <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/e-grammar\">Elementary Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n                </div>\n              </li>\n          </ul>\n          <form class=\"form-inline waves-light\" mdbWavesEffect>\n              <div class=\"md-form mt-45\">\n                  <input class=\"form-control mr-sm-20\" type=\"text\" placeholder=\"Search\">\n              </div>\n          </form>\n          <button type=\"button\" class=\"btn btn-round btn-outline-default\" mdbWavesEffect>\n            <ul class=\"navbar-nav nav-flex-icons\">\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" routerLink=\"/login\">LOG IN &emsp;<i class=\"fa fa-sign-in\"></i></a>\n                </li>\n            </ul>\n          </button>\n      </div>\n  </nav>\n\n</header>\n<!--Main Navigation-->\n"
+module.exports = "<!--Main Navigation-->\n<header>\n\n  <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark indigo text-center\">\n      <a class=\"navbar-brand\" routerLink=\"/home\"><strong><h2>English tutorials</h2></strong></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n          <ul class=\"navbar-nav mr-auto\" >\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Listening<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/listen-elementary\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Speaking<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Reading<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/reading\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/i-reading\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Writing<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n                <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\">\n                Grammar<span class=\"caret\"></span></a>\n                <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/e-grammar\">Elementary Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n                </div>\n              </li>\n          </ul>\n          <form class=\"form-inline waves-light\" mdbWavesEffect>\n              <div class=\"md-form mt-45\">\n                  <input class=\"form-control mr-sm-20\" type=\"text\" placeholder=\"Search\">\n              </div>\n          </form>\n          <button type=\"button\" class=\"btn btn-round btn-outline-default\" mdbWavesEffect>\n            <ul class=\"navbar-nav nav-flex-icons\">\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" routerLink=\"/login\">LOG IN &emsp;<i class=\"fa fa-sign-in\"></i></a>\n                </li>\n            </ul>\n          </button>\n      </div>\n  </nav>\n\n</header>\n<!--Main Navigation-->\n"
 
 /***/ }),
 
@@ -6572,7 +6596,7 @@ module.exports = "<!--Main Navigation-->\n<header>\n\n  <nav class=\"navbar fixe
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-round {\n  border-radius: 20px; }\n\n@media (min-width: 320px) {\n  .navbar {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -ms-flex-align: center;\n        align-items: center;\n    -ms-flex-pack: justify;\n        justify-content: space-between;\n    padding: 0.5rem 0.5rem; }\n  .navbar-brand {\n    display: inline-block;\n    /* padding-top: 0.3125rem; */\n    /* padding-bottom: 0.3125rem; */\n    /* margin-right: 1rem; */\n    font-size: 0.5rem;\n    line-height: inherit;\n    white-space: nowrap; } }\n\n@media (min-width: 768px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4[_ngcontent-c2] {\n    padding-top: 9rem !important; } }\n\n@media (min-width: 992px) {\n  .input-group {\n    position: relative;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4[_ngcontent-c2] {\n    padding-top: 9rem !important; } }\n"
+module.exports = ".btn-round {\n  border-radius: 20px; }\n\n@media (min-width: 320px) {\n  .navbar {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    -ms-flex-align: center;\n        align-items: center;\n    -ms-flex-pack: justify;\n        justify-content: space-between;\n    padding: 0.5rem 0.5rem; }\n  .navbar-brand {\n    display: inline-block;\n    /* padding-top: 0.3125rem; */\n    /* padding-bottom: 0.3125rem; */\n    /* margin-right: 1rem; */\n    font-size: 0.5rem;\n    line-height: inherit;\n    white-space: nowrap; } }\n\n@media (min-width: 768px) {\n  .input-group {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4[_ngcontent-c2] {\n    padding-top: 9rem !important; } }\n\n@media (min-width: 992px) {\n  .input-group {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    /* align-items: center; */\n    width: 70%;\n    margin: auto; }\n  .pt-4[_ngcontent-c2] {\n    padding-top: 9rem !important; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLG9CQUFtQixFQUN0Qjs7QUFDRDtFQUNJO0lBRUkscUJBQWE7SUFBYixjQUFhO0lBQ2Isb0JBQWU7UUFBZixnQkFBZTtJQUNmLHVCQUFtQjtRQUFuQixvQkFBbUI7SUFDbkIsdUJBQThCO1FBQTlCLCtCQUE4QjtJQUM5Qix1QkFBc0IsRUFDekI7RUFDRDtJQUNJLHNCQUFxQjtJQUNyQiw2QkFBNkI7SUFDN0IsZ0NBQWdDO0lBQ2hDLHlCQUF5QjtJQUN6QixrQkFBaUI7SUFDakIscUJBQW9CO0lBQ3BCLG9CQUFtQixFQUN0QixFQUFBOztBQU1MO0VBQ0k7SUFFSSxxQkFBYTtJQUFiLGNBQWE7SUFDYixvQkFBZTtRQUFmLGdCQUFlO0lBQ2YsMEJBQTBCO0lBQzFCLFdBQVU7SUFDVixhQUFZLEVBQ2Y7RUFDRDtJQUNJLDZCQUE0QixFQUMvQixFQUFBOztBQUlMO0VBQ0k7SUFFSSxxQkFBYTtJQUFiLGNBQWE7SUFDYixvQkFBZTtRQUFmLGdCQUFlO0lBQ2YsMEJBQTBCO0lBQzFCLFdBQVU7SUFDVixhQUFZLEVBQ2Y7RUFDRDtJQUNJLDZCQUE0QixFQUMvQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5idG4tcm91bmQge1xuICAgIGJvcmRlci1yYWRpdXM6IDIwcHg7XG59XG5AbWVkaWEgKG1pbi13aWR0aDogMzIwcHgpIHtcbiAgICAubmF2YmFyIHtcbiAgICAgICAgLy9wb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgICAgICBwYWRkaW5nOiAwLjVyZW0gMC41cmVtO1xuICAgIH0gXG4gICAgLm5hdmJhci1icmFuZCB7XG4gICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAgICAgLyogcGFkZGluZy10b3A6IDAuMzEyNXJlbTsgKi9cbiAgICAgICAgLyogcGFkZGluZy1ib3R0b206IDAuMzEyNXJlbTsgKi9cbiAgICAgICAgLyogbWFyZ2luLXJpZ2h0OiAxcmVtOyAqL1xuICAgICAgICBmb250LXNpemU6IDAuNXJlbTtcbiAgICAgICAgbGluZS1oZWlnaHQ6IGluaGVyaXQ7XG4gICAgICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgfVxuXG5cbiB9XG5cbi8vIE1lZGl1bSBkZXZpY2VzICh0YWJsZXRzLCA3NjhweCBhbmQgdXApXG5AbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIHsgXG4gICAgLmlucHV0LWdyb3VwIHtcbiAgICAgICAgLy9wb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtd3JhcDogd3JhcDtcbiAgICAgICAgLyogYWxpZ24taXRlbXM6IGNlbnRlcjsgKi9cbiAgICAgICAgd2lkdGg6IDcwJTtcbiAgICAgICAgbWFyZ2luOiBhdXRvO1xuICAgIH1cbiAgICAucHQtNFtfbmdjb250ZW50LWMyXSB7XG4gICAgICAgIHBhZGRpbmctdG9wOiA5cmVtICFpbXBvcnRhbnQ7XG4gICAgfVxuIH1cblxuLy8gTGFyZ2UgZGV2aWNlcyAoZGVza3RvcHMsIDk5MnB4IGFuZCB1cClcbkBtZWRpYSAobWluLXdpZHRoOiA5OTJweCkgeyBcbiAgICAuaW5wdXQtZ3JvdXAge1xuICAgICAgICAvL3Bvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgZmxleC13cmFwOiB3cmFwO1xuICAgICAgICAvKiBhbGlnbi1pdGVtczogY2VudGVyOyAqL1xuICAgICAgICB3aWR0aDogNzAlO1xuICAgICAgICBtYXJnaW46IGF1dG87XG4gICAgfVxuICAgIC5wdC00W19uZ2NvbnRlbnQtYzJdIHtcbiAgICAgICAgcGFkZGluZy10b3A6IDlyZW0gIWltcG9ydGFudDtcbiAgICB9XG4gfVxuXG4vLyBFeHRyYSBsYXJnZSBkZXZpY2VzIChsYXJnZSBkZXNrdG9wcywgMTIwMHB4IGFuZCB1cClcbkBtZWRpYSAobWluLXdpZHRoOiAxMjAwcHgpIHsgIH1cbiJdfQ== */"
 
 /***/ }),
 
@@ -6635,7 +6659,7 @@ module.exports = "<main>\n    <!-- <div class=\"container\" style=\"height:1300p
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pt-30, .py-30 {\n  padding-top: 40rem !important; }\n\n.view {\n  background: url(\"/assets/images/vancouver.jpg\") no-repeat center center;\n  background-size: cover; }\n\n@media (min-width: 768px) {\n  .view {\n    overflow: visible;\n    margin-top: -56px; } }\n\n.navbar {\n  z-index: 1; }\n\n.text-small {\n  font-size: 0.75rem; }\n"
+module.exports = ".pt-30, .py-30 {\n  padding-top: 40rem !important; }\n\n.view {\n  background: url(\"/assets/images/vancouver.jpg\") no-repeat center center;\n  background-size: cover; }\n\n@media (min-width: 768px) {\n  .view {\n    overflow: visible;\n    margin-top: -56px; } }\n\n.navbar {\n  z-index: 1; }\n\n.text-small {\n  font-size: 0.75rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksOEJBQTZCLEVBQ2hDOztBQUNEO0VBQ0ksd0VBQXVFO0VBQ3ZFLHVCQUFzQixFQUN6Qjs7QUFDRDtFQUNJO0lBQ0ksa0JBQWlCO0lBQ2pCLGtCQUFpQixFQUNwQixFQUFBOztBQUVMO0VBQ0ksV0FBVSxFQUNiOztBQUNEO0VBQ0ksbUJBQWtCLEVBQ3JCIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnB0LTMwLCAucHktMzAge1xuICAgIHBhZGRpbmctdG9wOiA0MHJlbSAhaW1wb3J0YW50O1xufVxuLnZpZXcge1xuICAgIGJhY2tncm91bmQ6IHVybChcIi9hc3NldHMvaW1hZ2VzL3ZhbmNvdXZlci5qcGdcIikgbm8tcmVwZWF0IGNlbnRlciBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkge1xuICAgIC52aWV3IHtcbiAgICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICAgIG1hcmdpbi10b3A6IC01NnB4O1xuICAgIH1cbn1cbi5uYXZiYXIge1xuICAgIHotaW5kZXg6IDE7XG59XG4udGV4dC1zbWFsbCB7XG4gICAgZm9udC1zaXplOiAwLjc1cmVtO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -6680,6 +6704,316 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/i-reading/i-reading.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/i-reading/i-reading.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"main\">\n      <div *ngFor=\"let question of lesson;\">\n        <audio controls class=\"header__audio\">\n            <source src=\"#\" type=\"audio/ogg\">\n            <source src={{question.audio}} type=\"audio/mpeg\">\n            Your browser does not support the audio element.\n        </audio>\n        <div class=\"header__title\">\n                {{question.title}}\n            </div>\n          \n          <div class=\"body\" [innerHTML] =\"question.content\" ></div>\n      </div>\n\n</div>\n<footer class=\"footer-copyright fixed-bottom \">\n    <div class = \"blue py-3 text-center text-white\">\n    <i class=\"fa fa-fast-backward pr-5 fa-lg\" (click)=\"goto(0)\"></i>\n    <i class=\"fa fa-backward pr-5 fa-lg\" (click)=\"goto(page.index -1)\"></i>\n    <i class=\"fa fa-forward pr-5 fa-lg\" (click)=\"goto(page.index + 1)\"></i>\n    <i class=\"fa fa-fast-forward fa-lg\" (click)=\"goto(page.num-1)\"></i>\n    </div>\n  </footer>"
+
+/***/ }),
+
+/***/ "./src/app/i-reading/i-reading.component.scss":
+/*!****************************************************!*\
+  !*** ./src/app/i-reading/i-reading.component.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".header__title {\n  display: block;\n  width: 100%;\n  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);\n  background-size: cover;\n  background-position: top;\n  text-align: center;\n  top: 2.5vh;\n  padding-top: 5rem;\n  position: relative;\n  font-size: 4.5vh;\n  z-index: 1; }\n\n.header__audio {\n  position: absolute;\n  width: 300px;\n  height: 300px;\n  bottom: 60px;\n  right: 25%;\n  left: 50%;\n  margin-left: -150px;\n  position: -webkit-sticky;\n  position: fixed;\n  z-index: 3000; }\n\n.body {\n  position: absolute;\n  margin-top: 8vh;\n  font-size: 1.2rem;\n  padding: 1.5rem;\n  z-index: 1;\n  margin-bottom: 10rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvaS1yZWFkaW5nL2ktcmVhZGluZy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLQTtFQUNRLGVBQWE7RUFDYixZQUFXO0VBQ1gscUVBQStHO0VBQy9HLHVCQUFzQjtFQUN0Qix5QkFBd0I7RUFDeEIsbUJBQWtCO0VBQ2xCLFdBQVM7RUFDVCxrQkFBaUI7RUFDakIsbUJBQWtCO0VBQ2xCLGlCQUFnQjtFQUNoQixXQUFVLEVBQ2pCOztBQUVEO0VBQ0ksbUJBQWlCO0VBQ2pCLGFBQVc7RUFDWCxjQUFZO0VBQ1osYUFBVztFQUNYLFdBQVM7RUFDVCxVQUFRO0VBQ1Isb0JBQWtCO0VBQ2xCLHlCQUF3QjtFQUN4QixnQkFBZTtFQUVmLGNBQWEsRUFDaEI7O0FBRUQ7RUFDSSxtQkFBa0I7RUFDbEIsZ0JBQWM7RUFDZCxrQkFBaUI7RUFDakIsZ0JBQWU7RUFDZixXQUFVO0VBQ1YscUJBQW9CLEVBRXZCIiwiZmlsZSI6InNyYy9hcHAvaS1yZWFkaW5nL2ktcmVhZGluZy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiRjb2xvci1wcmltYXJ5OiAjNTVjNTdhO1xuJGNvbG9yLXByaW1hcnktbGlnaHQ6ICM3ZWQ1NmY7XG4kY29sb3ItcHJpbWFyeS1kYXJrOiAjMjhiNDg1O1xuJGNvbG9yLWdyZXktZGFyazogYmxhY2s7XG5cbi5oZWFkZXJfX3RpdGxle1xuICAgICAgICBkaXNwbGF5OmJsb2NrO1xuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHRvIHJpZ2h0IGJvdHRvbSwgcmdiYSgkY29sb3ItcHJpbWFyeS1saWdodCwgMSksIHJnYmEoJGNvbG9yLXByaW1hcnktZGFyaywgMSkpO1xuICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiB0b3A7XG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAgICAgdG9wOjIuNXZoO1xuICAgICAgICBwYWRkaW5nLXRvcDogNXJlbTtcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICBmb250LXNpemU6IDQuNXZoO1xuICAgICAgICB6LWluZGV4OiAxOyAgIFxufVxuXG4uaGVhZGVyX19hdWRpb3tcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgICB3aWR0aDozMDBweDtcbiAgICBoZWlnaHQ6MzAwcHg7XG4gICAgYm90dG9tOjYwcHg7XG4gICAgcmlnaHQ6MjUlO1xuICAgIGxlZnQ6NTAlO1xuICAgIG1hcmdpbi1sZWZ0Oi0xNTBweDtcbiAgICBwb3NpdGlvbjogLXdlYmtpdC1zdGlja3k7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIC8vIHRvcDoxMC41dmg7XG4gICAgei1pbmRleDogMzAwMDtcbn0gXG5cbi5ib2R5e1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBtYXJnaW4tdG9wOjh2aDtcbiAgICBmb250LXNpemU6IDEuMnJlbTtcbiAgICBwYWRkaW5nOiAxLjVyZW07XG4gICAgei1pbmRleDogMTtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHJlbTtcbiAgICBcbn1cblxuXG5cblxuIl19 */"
+
+/***/ }),
+
+/***/ "./src/app/i-reading/i-reading.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/i-reading/i-reading.component.ts ***!
+  \**************************************************/
+/*! exports provided: IReadingComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IReadingComponent", function() { return IReadingComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/reading/reading-service.service */ "./src/app/services/reading/reading-service.service.ts");
+/* harmony import */ var _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/reading/lessons.model */ "./src/app/models/reading/lessons.model.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var IReadingComponent = /** @class */ (function () {
+    function IReadingComponent(readingservice) {
+        this.readingservice = readingservice;
+        this.page = {
+            index: 0,
+            size: 1,
+            num: 1
+        };
+        this.lessons = new _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__["readingLessons"](null);
+        this.reading_config = [{
+                name: "health", content: "assets/data/reading/health/health.json"
+            }];
+    }
+    IReadingComponent.prototype.ngOnInit = function () {
+        debugger;
+        for (var _i = 0, _a = this.reading_config; _i < _a.length; _i++) {
+            var entry = _a[_i];
+            this.loadLesson(entry.content);
+        }
+    };
+    IReadingComponent.prototype.loadLesson = function (le) {
+        var _this = this;
+        debugger;
+        this.readingservice.get(le).subscribe(function (res) {
+            debugger;
+            _this.lessons = new _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__["readingLessons"](res);
+            _this.page.num = _this.lessons.lessons.length;
+            _this.page.index = 0;
+            _this.page.size = 1;
+        });
+    };
+    Object.defineProperty(IReadingComponent.prototype, "lesson", {
+        get: function () {
+            debugger;
+            return (this.lessons.lessons) ? this.lessons.lessons.slice(this.page.index, this.page.index + this.page.size) : [];
+        },
+        enumerable: true,
+        configurable: true
+    });
+    IReadingComponent.prototype.goto = function (index) {
+        debugger;
+        this.page.index = index;
+    };
+    IReadingComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-i-reading',
+            template: __webpack_require__(/*! ./i-reading.component.html */ "./src/app/i-reading/i-reading.component.html"),
+            styles: [__webpack_require__(/*! ./i-reading.component.scss */ "./src/app/i-reading/i-reading.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__["ReadingService"]])
+    ], IReadingComponent);
+    return IReadingComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/listening/elementary/elementary.component.html":
+/*!****************************************************************!*\
+  !*** ./src/app/listening/elementary/elementary.component.html ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\" >\n  <div class=\"btn-group pt-4 ml-15\">\n      <button class=\"btn btn-primary btn-lg dropdown-toggle\" \n              type=\"button\" \n              data-toggle=\"dropdown\"\n              aria-haspopup=\"true\"\n              aria-expanded=\"false\"\n              mdbWavesEffect\n              >\n          {{selectedLesson}}\n      </button>\n      <div class=\"dropdown-menu dropdown dropdown-info\" >\n          <a class=\"dropdown-item\" (click)=\"selectLesson('Clap Clap Clap')\">Clap Clap Clap</a>\n          <div class=\"dropdown-divider\"></div>\n          <a class=\"dropdown-item\" (click)=\"selectLesson('Button Up')\">Button up</a>\n          <div class=\"dropdown-divider\"></div>\n          <a class=\"dropdown-item\" (click)=\"selectLesson('Come On Everyday')\">Come on everyday</a>\n      </div>\n  </div>\n  <div *ngIf=\"goto === true\">\n    <app-lesson-detail [selectedLessonTransfer]=\"selectedLessonTranfer\"></app-lesson-detail>\n</div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/listening/elementary/elementary.component.scss":
+/*!****************************************************************!*\
+  !*** ./src/app/listening/elementary/elementary.component.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xpc3RlbmluZy9lbGVtZW50YXJ5L2VsZW1lbnRhcnkuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/listening/elementary/elementary.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/listening/elementary/elementary.component.ts ***!
+  \**************************************************************/
+/*! exports provided: ElementaryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ElementaryComponent", function() { return ElementaryComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ElementaryComponent = /** @class */ (function () {
+    function ElementaryComponent() {
+        this.selectedLesson = "SELECT LESSON";
+        this.goto = false;
+    }
+    ElementaryComponent.prototype.ngOnInit = function () {
+    };
+    ElementaryComponent.prototype.selectLesson = function (lesson) {
+        this.selectedLesson = lesson;
+        this.selectedLessonTranfer = this.selectedLesson.replace(/\s/g, '');
+        this.goto = true;
+    };
+    ElementaryComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-elementary',
+            template: __webpack_require__(/*! ./elementary.component.html */ "./src/app/listening/elementary/elementary.component.html"),
+            styles: [__webpack_require__(/*! ./elementary.component.scss */ "./src/app/listening/elementary/elementary.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ElementaryComponent);
+    return ElementaryComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/listening/elementary/lesson-detail/lesson-detail.component.html":
+/*!*********************************************************************************!*\
+  !*** ./src/app/listening/elementary/lesson-detail/lesson-detail.component.html ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  lesson-detail works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/listening/elementary/lesson-detail/lesson-detail.component.scss":
+/*!*********************************************************************************!*\
+  !*** ./src/app/listening/elementary/lesson-detail/lesson-detail.component.scss ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xpc3RlbmluZy9lbGVtZW50YXJ5L2xlc3Nvbi1kZXRhaWwvbGVzc29uLWRldGFpbC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/listening/elementary/lesson-detail/lesson-detail.component.ts":
+/*!*******************************************************************************!*\
+  !*** ./src/app/listening/elementary/lesson-detail/lesson-detail.component.ts ***!
+  \*******************************************************************************/
+/*! exports provided: LessonDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LessonDetailComponent", function() { return LessonDetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LessonDetailComponent = /** @class */ (function () {
+    function LessonDetailComponent() {
+    }
+    LessonDetailComponent.prototype.ngOnInit = function () {
+        console.log(this.selectedLessonTransfer);
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], LessonDetailComponent.prototype, "selectedLessonTransfer", void 0);
+    LessonDetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-lesson-detail',
+            template: __webpack_require__(/*! ./lesson-detail.component.html */ "./src/app/listening/elementary/lesson-detail/lesson-detail.component.html"),
+            styles: [__webpack_require__(/*! ./lesson-detail.component.scss */ "./src/app/listening/elementary/lesson-detail/lesson-detail.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LessonDetailComponent);
+    return LessonDetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/listening/listening.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/listening/listening.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/listening/listening.component.scss":
+/*!****************************************************!*\
+  !*** ./src/app/listening/listening.component.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".top {\n  margin-top: 50px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvbGlzdGVuaW5nL2xpc3RlbmluZy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGlCQUFlLEVBQ2xCIiwiZmlsZSI6InNyYy9hcHAvbGlzdGVuaW5nL2xpc3RlbmluZy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50b3B7XG4gICAgbWFyZ2luLXRvcDo1MHB4O1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/listening/listening.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/listening/listening.component.ts ***!
+  \**************************************************/
+/*! exports provided: ListeningComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListeningComponent", function() { return ListeningComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ListeningComponent = /** @class */ (function () {
+    function ListeningComponent() {
+        this.selectedLesson = "SELECT LESSON";
+    }
+    ListeningComponent.prototype.ngOnInit = function () {
+    };
+    ListeningComponent.prototype.selectLesson = function (lesson) {
+        this.selectedLesson = lesson;
+    };
+    ListeningComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-listening',
+            template: __webpack_require__(/*! ./listening.component.html */ "./src/app/listening/listening.component.html"),
+            styles: [__webpack_require__(/*! ./listening.component.scss */ "./src/app/listening/listening.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ListeningComponent);
+    return ListeningComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/login/login.component.html":
 /*!********************************************!*\
   !*** ./src/app/login/login.component.html ***!
@@ -6698,7 +7032,7 @@ module.exports = " <div class=\"container\">\n      <div class=\"row\">\n       
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-default {\n  background-color: #0d47a1 !important; }\n\n.danger-text {\n  color: #ff3547; }\n"
+module.exports = ".btn-default {\n  background-color: #0d47a1 !important; }\n\n.danger-text {\n  color: #ff3547; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQ0FDSixFQUFDOztBQUNEO0VBQ0ksZUFBYyxFQUFHIiwiZmlsZSI6InNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWRlZmF1bHR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBkNDdhMSAhaW1wb3J0YW50XG59XG4uZGFuZ2VyLXRleHQge1xuICAgIGNvbG9yOiAjZmYzNTQ3OyB9Il19 */"
 
 /***/ }),
 
@@ -6780,6 +7114,63 @@ var LoginComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/models/reading/lessons.model.ts":
+/*!*************************************************!*\
+  !*** ./src/app/models/reading/lessons.model.ts ***!
+  \*************************************************/
+/*! exports provided: readingLessons */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "readingLessons", function() { return readingLessons; });
+/* harmony import */ var _reading_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./reading.model */ "./src/app/models/reading/reading.model.ts");
+
+var readingLessons = /** @class */ (function () {
+    function readingLessons(data) {
+        var _this = this;
+        debugger;
+        if (data) {
+            this.name = data.name;
+            this.title = data.title;
+            this.lessons = [];
+            data.lessons.forEach(function (el) {
+                _this.lessons.push(new _reading_model__WEBPACK_IMPORTED_MODULE_0__["readingModel"](el));
+            });
+        }
+    }
+    return readingLessons;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/models/reading/reading.model.ts":
+/*!*************************************************!*\
+  !*** ./src/app/models/reading/reading.model.ts ***!
+  \*************************************************/
+/*! exports provided: readingModel */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "readingModel", function() { return readingModel; });
+var readingModel = /** @class */ (function () {
+    function readingModel(data) {
+        debugger;
+        this.id = data.healthId;
+        this.title = data.title;
+        this.audio = data.audio;
+        this.content = data.content;
+    }
+    return readingModel;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/reading/reading.component.html":
 /*!************************************************!*\
   !*** ./src/app/reading/reading.component.html ***!
@@ -6798,7 +7189,7 @@ module.exports = "<!-- Nav tabs -->\n<ul id=\"navbar-example1\" class=\"nav nav-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".scrollspy-example {\n  height: 200px; }\n"
+module.exports = ".scrollspy-example {\n  height: 200px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9yZWFkaW5nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksY0FBYSxFQUNoQiIsImZpbGUiOiJzcmMvYXBwL3JlYWRpbmcvcmVhZGluZy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zY3JvbGxzcHktZXhhbXBsZSB7XG4gICAgaGVpZ2h0OiAyMDBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -6861,7 +7252,7 @@ module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div cla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-default {\n  background-color: #0d47a1 !important; }\n\n.danger-text {\n  color: #ff3547; }\n"
+module.exports = ".btn-default {\n  background-color: #0d47a1 !important; }\n\n.danger-text {\n  color: #ff3547; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQ0FDSixFQUFDOztBQUNEO0VBQ0ksZUFBYyxFQUFHIiwiZmlsZSI6InNyYy9hcHAvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWRlZmF1bHR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBkNDdhMSAhaW1wb3J0YW50XG59XG4uZGFuZ2VyLXRleHQge1xuICAgIGNvbG9yOiAjZmYzNTQ3OyB9Il19 */"
 
 /***/ }),
 
@@ -7040,6 +7431,50 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/reading/reading-service.service.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/services/reading/reading-service.service.ts ***!
+  \*************************************************************/
+/*! exports provided: ReadingService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReadingService", function() { return ReadingService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ReadingService = /** @class */ (function () {
+    function ReadingService(http) {
+        this.http = http;
+    }
+    ReadingService.prototype.get = function (url) {
+        debugger;
+        return this.http.get(url);
+    };
+    ReadingService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], ReadingService);
+    return ReadingService;
+}());
 
 
 
@@ -7249,7 +7684,7 @@ module.exports = "<p>\n  practices works!\n</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RlbnNlLWRldGFpbHMvcHJhY3RpY2VzL3ByYWN0aWNlcy5jb21wb25lbnQuc2NzcyJ9 */"
 
 /***/ }),
 
@@ -7312,7 +7747,7 @@ module.exports = "<div class=\"col-md-12 pt-30 col-xl-5 mt-2 text-center\">\n   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pt-30, .py-30 {\n  padding-top: 7rem !important; }\n\n.pt-20 {\n  padding-top: 5rem !important; }\n\n.in {\n  border-top: none;\n  border-left: none;\n  border-right: none;\n  background: transparent;\n  border-bottom: 1px solid #fff;\n  outline: none; }\n"
+module.exports = ".pt-30, .py-30 {\n  padding-top: 7rem !important; }\n\n.pt-20 {\n  padding-top: 5rem !important; }\n\n.in {\n  border-top: none;\n  border-left: none;\n  border-right: none;\n  background: transparent;\n  border-bottom: 1px solid #fff;\n  outline: none; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvdGVuc2UtZGV0YWlscy90ZW5zZS1kZXRhaWxzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksNkJBQTRCLEVBQy9COztBQUNEO0VBQ0ksNkJBQTRCLEVBQy9COztBQUNEO0VBQ0ksaUJBQWdCO0VBQ2hCLGtCQUFpQjtFQUNqQixtQkFBa0I7RUFDbEIsd0JBQXVCO0VBQ3ZCLDhCQUE2QjtFQUM3QixjQUFhLEVBQ2QiLCJmaWxlIjoic3JjL2FwcC90ZW5zZS1kZXRhaWxzL3RlbnNlLWRldGFpbHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHQtMzAsIC5weS0zMCB7XG4gICAgcGFkZGluZy10b3A6IDdyZW0gIWltcG9ydGFudDtcbn1cbi5wdC0yMHtcbiAgICBwYWRkaW5nLXRvcDogNXJlbSAhaW1wb3J0YW50O1xufVxuLmlue1xuICAgIGJvcmRlci10b3A6IG5vbmU7XG4gICAgYm9yZGVyLWxlZnQ6IG5vbmU7XG4gICAgYm9yZGVyLXJpZ2h0OiBub25lO1xuICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZmZmO1xuICAgIG91dGxpbmU6IG5vbmU7XG4gIH1cbiJdfQ== */"
 
 /***/ }),
 
@@ -7437,7 +7872,7 @@ module.exports = "<div class=\"container pt-30 \">\n  <div class=\"embed-respons
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pt-30, .py-30 {\n  padding-top: 3rem !important; }\n"
+module.exports = ".pt-30, .py-30 {\n  padding-top: 3rem !important; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvdGVuc2UtZGV0YWlscy92aWRlb3MvdmlkZW9zLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksNkJBQTRCLEVBQy9CIiwiZmlsZSI6InNyYy9hcHAvdGVuc2UtZGV0YWlscy92aWRlb3MvdmlkZW9zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnB0LTMwLCAucHktMzAge1xuICAgIHBhZGRpbmctdG9wOiAzcmVtICFpbXBvcnRhbnQ7XG59Il19 */"
 
 /***/ }),
 
@@ -7500,7 +7935,7 @@ module.exports = "<h1>adhalsd</h1>\n<h1>asdkfjasldfkhasldhf</h1>\n<p>\n  asdkjfb
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3dyaXRpbmcvd3JpdGluZy5jb21wb25lbnQuc2NzcyJ9 */"
 
 /***/ }),
 
