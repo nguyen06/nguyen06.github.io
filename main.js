@@ -6594,7 +6594,7 @@ var TenseDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--Main Navigation-->\n<header>\n\n  <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark indigo text-center\">\n      <a class=\"navbar-brand\" routerLink=\"/home\"><strong><h2>English tutorials</h2></strong></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n          <ul class=\"navbar-nav mr-auto\" >\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Listening<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/listen-elementary\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Speaking<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Reading<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/reading\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/i-reading\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Writing<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n                <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\">\n                Grammar<span class=\"caret\"></span></a>\n                <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/e-grammar\">Elementary Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n                </div>\n              </li>\n          </ul>\n          <form class=\"form-inline waves-light\" mdbWavesEffect>\n              <div class=\"md-form mt-45\">\n                  <input class=\"form-control mr-sm-20\" type=\"text\" placeholder=\"Search\">\n              </div>\n          </form>\n          <button type=\"button\" class=\"btn btn-round btn-outline-default\" mdbWavesEffect>\n            <ul class=\"navbar-nav nav-flex-icons\">\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" routerLink=\"/login\">LOG IN &emsp;<i class=\"fa fa-sign-in\"></i></a>\n                </li>\n            </ul>\n          </button>\n      </div>\n  </nav>\n\n</header>\n<!--Main Navigation-->\n"
+module.exports = "<!--Main Navigation-->\n<header>\n\n  <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark indigo text-center\">\n      <a class=\"navbar-brand\" routerLink=\"/home\"><strong><h2>English tutorials</h2></strong></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n          <ul class=\"navbar-nav mr-auto\" >\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Listening<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/listen-elementary\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Speaking<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Reading<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/reading\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/i-reading\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Writing<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n                <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\">\n                Grammar<span class=\"caret\"></span></a>\n                <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/e-grammar\">Elementary Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n                </div>\n              </li>\n          </ul>\n          <form class=\"form-inline waves-light\" mdbWavesEffect>\n              <div class=\"md-form mt-45\">\n                  <input class=\"form-control mr-sm-20\" type=\"text\" placeholder=\"Search\">\n              </div>\n          </form>\n          <button type=\"button\" class=\"btn btn-round btn-outline-default\" mdbWavesEffect>\n            <ul class=\"navbar-nav nav-flex-icons\">\n                <li class=\"nav-item\">\n                    <a *ngIf=\"logout\" class=\"nav-link\" routerLink=\"/login\">LOG IN &emsp;<i class=\"fa fa-sign-in\"></i></a>\n                    <a *ngIf=\"login\" class=\"nav-link\" routerLink=\"/login\">LOGOUT &emsp;<i class=\"fa fa-sign-out\"></i></a>\n\n                </li>\n            </ul>\n          </button>\n      </div>\n  </nav>\n\n</header>\n<!--Main Navigation-->\n"
 
 /***/ }),
 
@@ -6620,6 +6620,7 @@ module.exports = ".btn-round {\n  border-radius: 20px; }\n\n@media (min-width: 3
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/authentication.service */ "./src/app/services/authentication.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6630,10 +6631,26 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent() {
+    function HeaderComponent(auth) {
+        this.auth = auth;
     }
     HeaderComponent.prototype.ngOnInit = function () {
+        debugger;
+        if (localStorage.getItem('currentUser')) {
+            this.a = JSON.parse(localStorage.getItem('currentUser'));
+            if (this.a['status'] === "OK") {
+                this.login = true;
+            }
+            else {
+                this.logout = true;
+                this.auth.logout();
+            }
+        }
+        else {
+            this.logout = true;
+        }
     };
     HeaderComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -6641,7 +6658,7 @@ var HeaderComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./header.component.html */ "./src/app/header/header.component.html"),
             styles: [__webpack_require__(/*! ./header.component.scss */ "./src/app/header/header.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_services_authentication_service__WEBPACK_IMPORTED_MODULE_1__["authenticationService"]])
     ], HeaderComponent);
     return HeaderComponent;
 }());
@@ -7263,7 +7280,7 @@ var IReadingDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"center pt-15\">\n  <div class=\"container pb-4\">\n    <div class=\"row\">\n      <div class=\"col-4\">\n        <hr>\n      </div>\n      <div class=\"col-4 text-center\">\n          <h1>{{lessons.title}}</h1>\n        </div>\n        <div class=\"col-4\">\n            <hr>\n          </div>\n    </div>\n  </div>\n  <div   class=\"table-responsive \">\n      <table class=\"table\">\n        <thead class=\"black white-text\">\n          <tr>\n            <th>ID</th>\n            <th>Title</th>\n            <th>% Read</th>\n            <th>% Test</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr mdbTableCol *ngFor=\"let lesson of lessonsArr\" class=\"title\" [routerLink]=\"['/i-reading-detail',lessons.title,lesson.id]\">\n            <th scope=\"row\">{{lesson.id}}</th>\n            <th >{{lesson.title}}</th>\n            <th>0%</th>\n            <th>0%</th>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n</div>\n\n"
+module.exports = "<div class=\"center pt-15\">\n  <div *ngIf=\"loading === false\" class=\"container pb-4\">\n    <div class=\"row\">\n      <div class=\"col-4\">\n        <hr>\n      </div>\n      <div class=\"col-4 text-center\">\n          <h1>{{lessonCate}}</h1>\n        </div>\n        <div class=\"col-4\">\n            <hr>\n          </div>\n    </div>\n  </div>\n  <div  class=\"table-responsive \">\n      <img *ngIf=\"loading\" src=\"assets/images/Ripple.gif\" />\n      <table *ngIf=\"loading === false\" class=\"table\">\n        <thead class=\"primary-color-dark white-text\">\n          <tr>\n            <th>ID</th>\n            <th>Title</th>\n            <th>% Read</th>\n            <th>% Test</th>\n          </tr>\n        </thead>\n        \n        <tbody>\n          <tr mdbTableCol *ngFor=\"let lesson of lessonsArr\" class=\"title\" [routerLink]=\"['/i-reading-detail',lesson.category,lesson.id]\">\n            <th scope=\"row\">{{lesson.id}}</th>\n            <th >{{lesson.title}}</th>\n            <th>{{lesson.percentAssume}}%</th>\n            <th>{{lesson.percentActual}}%</th>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -7274,7 +7291,7 @@ module.exports = "<div class=\"center pt-15\">\n  <div class=\"container pb-4\">
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pt-15 {\n  margin-top: 13vh; }\n\n.center {\n  padding: 3vh; }\n\nth {\n  font-size: 2.0vh; }\n\n.title:hover {\n  background-color: #484848;\n  color: white;\n  cursor: pointer; }\n\nh1 {\n  font-size: 4vh;\n  text-transform: uppercase;\n  font-weight: 700;\n  display: inline-block;\n  background-image: linear-gradient(to right, #7ed56f, #28b485);\n  -webkit-background-clip: text;\n  color: transparent;\n  letter-spacing: .2rem;\n  transition: all .2s; }\n\nhr {\n  margin-top: 1,5vh;\n  size: 30px; }\n\n/* Large devices (laptops/desktops, 992px and up) */\n\n@media only screen and (min-width: 1366px) {\n  .center {\n    padding: 3vh 32vh; } }\n\n/* Extra large devices (large laptops and desktops, 1200px and up) */\n\n@media only screen and (min-width: 1200px) {\n  .center {\n    padding: 4vh 32vh; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLW1lbnUvaS1yZWFkaW5nLW1lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRyxpQkFBZ0IsRUFDbEI7O0FBQ0Q7RUFDSSxhQUFXLEVBQ2Q7O0FBQ0Q7RUFDSSxpQkFBZ0IsRUFDbkI7O0FBRUQ7RUFFUSwwQkFBeUI7RUFDekIsYUFBWTtFQUNaLGdCQUFlLEVBQ2xCOztBQUVMO0VBQ0ksZUFBYztFQUNkLDBCQUF5QjtFQUN6QixpQkFBZ0I7RUFDaEIsc0JBQXFCO0VBQ3JCLDhEQUE2RDtFQUM3RCw4QkFBNkI7RUFDN0IsbUJBQWtCO0VBQ2xCLHNCQUFxQjtFQUNyQixvQkFBbUIsRUFDdEI7O0FBQ0Q7RUFDSSxrQkFBaUI7RUFDakIsV0FBUyxFQUNaOztBQUNELG9EQUFvRDs7QUFDcEQ7RUFDSTtJQUNJLGtCQUFpQixFQUNwQixFQUFBOztBQUdMLHFFQUFxRTs7QUFDckU7RUFDSTtJQUNJLGtCQUFpQixFQUNwQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLW1lbnUvaS1yZWFkaW5nLW1lbnUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHQtMTV7XG4gICBtYXJnaW4tdG9wOiAxM3ZoO1xufVxuLmNlbnRlcntcbiAgICBwYWRkaW5nOjN2aDtcbn1cbnRoe1xuICAgIGZvbnQtc2l6ZTogMi4wdmg7XG59XG5cbi50aXRsZXtcbiAgICAmOmhvdmVye1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDg0ODQ4O1xuICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB9XG59XG5oMXtcbiAgICBmb250LXNpemU6IDR2aDtcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byByaWdodCwgIzdlZDU2ZiwgIzI4YjQ4NSk7XG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLWNsaXA6IHRleHQ7XG4gICAgY29sb3I6IHRyYW5zcGFyZW50O1xuICAgIGxldHRlci1zcGFjaW5nOiAuMnJlbTtcbiAgICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xufVxuaHJ7XG4gICAgbWFyZ2luLXRvcDogMSw1dmg7XG4gICAgc2l6ZTozMHB4O1xufVxuLyogTGFyZ2UgZGV2aWNlcyAobGFwdG9wcy9kZXNrdG9wcywgOTkycHggYW5kIHVwKSAqL1xuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAxMzY2cHgpIHtcbiAgICAuY2VudGVye1xuICAgICAgICBwYWRkaW5nOiAzdmggMzJ2aDtcbiAgICB9XG59IFxuXG4vKiBFeHRyYSBsYXJnZSBkZXZpY2VzIChsYXJnZSBsYXB0b3BzIGFuZCBkZXNrdG9wcywgMTIwMHB4IGFuZCB1cCkgKi9cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTIwMHB4KSB7XG4gICAgLmNlbnRlcntcbiAgICAgICAgcGFkZGluZzogNHZoIDMydmg7XG4gICAgfVxufSJdfQ== */"
+module.exports = ".pt-15 {\n  margin-top: 13vh; }\n\n.center {\n  padding: 3vh; }\n\nth {\n  font-size: 2.0vh; }\n\n.title:hover {\n  background-color: #4285F4;\n  color: white;\n  cursor: pointer; }\n\nh1 {\n  font-size: 4vh;\n  text-transform: uppercase;\n  font-weight: 700;\n  display: inline-block;\n  background-image: linear-gradient(to right, #7ed56f, #28b485);\n  -webkit-background-clip: text;\n  color: transparent;\n  letter-spacing: .2rem;\n  transition: all .2s; }\n\nhr {\n  margin-top: 1,5vh;\n  size: 30px; }\n\n/* Large devices (laptops/desktops, 992px and up) */\n\n@media only screen and (min-width: 1366px) {\n  .center {\n    padding: 3vh 32vh; } }\n\n/* Extra large devices (large laptops and desktops, 1200px and up) */\n\n@media only screen and (min-width: 1200px) {\n  .center {\n    padding: 4vh 32vh; } }\n\nimg {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 50%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLW1lbnUvaS1yZWFkaW5nLW1lbnUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRyxpQkFBZ0IsRUFDbEI7O0FBQ0Q7RUFDSSxhQUFXLEVBQ2Q7O0FBQ0Q7RUFDSSxpQkFBZ0IsRUFDbkI7O0FBRUQ7RUFFUSwwQkFBeUI7RUFDekIsYUFBWTtFQUNaLGdCQUFlLEVBQ2xCOztBQUVMO0VBQ0ksZUFBYztFQUNkLDBCQUF5QjtFQUN6QixpQkFBZ0I7RUFDaEIsc0JBQXFCO0VBQ3JCLDhEQUE2RDtFQUM3RCw4QkFBNkI7RUFDN0IsbUJBQWtCO0VBQ2xCLHNCQUFxQjtFQUNyQixvQkFBbUIsRUFDdEI7O0FBQ0Q7RUFDSSxrQkFBaUI7RUFDakIsV0FBUyxFQUNaOztBQUNELG9EQUFvRDs7QUFDcEQ7RUFDSTtJQUNJLGtCQUFpQixFQUNwQixFQUFBOztBQUdMLHFFQUFxRTs7QUFDckU7RUFDSTtJQUNJLGtCQUFpQixFQUNwQixFQUFBOztBQUdMO0VBQ0ksZUFBYztFQUNkLGtCQUFpQjtFQUNqQixtQkFBa0I7RUFDbEIsV0FBVSxFQUNiIiwiZmlsZSI6InNyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLW1lbnUvaS1yZWFkaW5nLW1lbnUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHQtMTV7XG4gICBtYXJnaW4tdG9wOiAxM3ZoO1xufVxuLmNlbnRlcntcbiAgICBwYWRkaW5nOjN2aDtcbn1cbnRoe1xuICAgIGZvbnQtc2l6ZTogMi4wdmg7XG59XG5cbi50aXRsZXtcbiAgICAmOmhvdmVye1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDI4NUY0O1xuICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB9XG59XG5oMXtcbiAgICBmb250LXNpemU6IDR2aDtcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byByaWdodCwgIzdlZDU2ZiwgIzI4YjQ4NSk7XG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLWNsaXA6IHRleHQ7XG4gICAgY29sb3I6IHRyYW5zcGFyZW50O1xuICAgIGxldHRlci1zcGFjaW5nOiAuMnJlbTtcbiAgICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xufVxuaHJ7XG4gICAgbWFyZ2luLXRvcDogMSw1dmg7XG4gICAgc2l6ZTozMHB4O1xufVxuLyogTGFyZ2UgZGV2aWNlcyAobGFwdG9wcy9kZXNrdG9wcywgOTkycHggYW5kIHVwKSAqL1xuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiAxMzY2cHgpIHtcbiAgICAuY2VudGVye1xuICAgICAgICBwYWRkaW5nOiAzdmggMzJ2aDtcbiAgICB9XG59IFxuXG4vKiBFeHRyYSBsYXJnZSBkZXZpY2VzIChsYXJnZSBsYXB0b3BzIGFuZCBkZXNrdG9wcywgMTIwMHB4IGFuZCB1cCkgKi9cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTIwMHB4KSB7XG4gICAgLmNlbnRlcntcbiAgICAgICAgcGFkZGluZzogNHZoIDMydmg7XG4gICAgfVxufVxuXG5pbWcge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICAgIG1hcmdpbi1yaWdodDogYXV0bztcbiAgICB3aWR0aDogNTAlO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -7290,8 +7307,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IReadingMenuComponent", function() { return IReadingMenuComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../services/reading/reading-service.service */ "./src/app/services/reading/reading-service.service.ts");
-/* harmony import */ var _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../models/reading/lessons.model */ "./src/app/models/reading/lessons.model.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7304,31 +7320,28 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-
 var IReadingMenuComponent = /** @class */ (function () {
     function IReadingMenuComponent(readingservice, route) {
         var _this = this;
         this.readingservice = readingservice;
         this.route = route;
-        this.lessons = new _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__["readingLessons"](null);
         this.reading_config = [{
                 name: "health", content: "assets/data/reading/"
             }];
         route.params.subscribe(function (params) { _this.id = params['id']; });
     }
     IReadingMenuComponent.prototype.ngOnInit = function () {
-        console.log(this.id);
-        for (var _i = 0, _a = this.reading_config; _i < _a.length; _i++) {
-            var entry = _a[_i];
-            this.loadLesson(entry.content);
-        }
+        this.loadLesson(this.id);
     };
     IReadingMenuComponent.prototype.loadLesson = function (para) {
         var _this = this;
-        var url = para + this.id + "/" + this.id + ".json";
-        this.readingservice.get(url).subscribe(function (res) {
-            _this.lessons = new _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__["readingLessons"](res);
-            _this.lessonsArr = _this.lessons.lessons;
+        this.loading = true;
+        this.readingservice.getMenu(para).subscribe(function (res) {
+            if (res.length !== 0) {
+                _this.loading = false;
+                _this.lessonCate = res[0].category;
+                _this.lessonsArr = res;
+            }
         });
     };
     IReadingMenuComponent = __decorate([
@@ -7338,7 +7351,7 @@ var IReadingMenuComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./i-reading-menu.component.scss */ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.scss")]
         }),
         __metadata("design:paramtypes", [_services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__["ReadingService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
     ], IReadingMenuComponent);
     return IReadingMenuComponent;
 }());
@@ -7707,6 +7720,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReadingService", function() { return ReadingService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7718,12 +7732,25 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var ReadingService = /** @class */ (function () {
     function ReadingService(http) {
         this.http = http;
     }
     ReadingService.prototype.get = function (url) {
         return this.http.get(url);
+    };
+    ReadingService.prototype.getMenu = function (cate) {
+        return this.http.post('https://pure-tor-72835.herokuapp.com/menu/category', {
+            category: cate
+        }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (result) {
+            if (result.status === 'not found') {
+                return [];
+            }
+            else if (result.status === 'ok') {
+                return result.response;
+            }
+        }));
     };
     ReadingService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
