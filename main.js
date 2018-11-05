@@ -7335,8 +7335,10 @@ var IReadingMenuComponent = /** @class */ (function () {
     };
     IReadingMenuComponent.prototype.loadLesson = function (para) {
         var _this = this;
+        debugger;
         this.loading = true;
         this.readingservice.getMenu(para).subscribe(function (res) {
+            debugger;
             if (res.length !== 0) {
                 _this.loading = false;
                 _this.lessonCate = res[0].category;
@@ -7741,6 +7743,7 @@ var ReadingService = /** @class */ (function () {
         return this.http.get(url);
     };
     ReadingService.prototype.getMenu = function (cate) {
+        debugger;
         return this.http.post('https://pure-tor-72835.herokuapp.com/menu/category', {
             category: cate
         }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (result) {
@@ -7748,7 +7751,15 @@ var ReadingService = /** @class */ (function () {
                 return [];
             }
             else if (result.status === 'ok') {
-                return result.response;
+                debugger;
+                var responseArr = [];
+                for (var _i = 0, _a = result.response; _i < _a.length; _i++) {
+                    var element = _a[_i];
+                    if (element.category === cate) {
+                        responseArr.push(element);
+                    }
+                }
+                return responseArr;
             }
         }));
     };
