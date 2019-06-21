@@ -5983,6 +5983,287 @@ MDBBootstrapModule.decorators = [
 
 /***/ }),
 
+/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!**************************************************!*\
+  !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ku": "./node_modules/moment/locale/ku.js",
+	"./ku.js": "./node_modules/moment/locale/ku.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./src/$$_lazy_route_resource lazy recursive":
 /*!**********************************************************!*\
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
@@ -6119,7 +6400,7 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n<router-outlet></router-outlet>\n"
+module.exports = "<!-- <app-header></app-header> -->\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -6182,31 +6463,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _services_tense_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/tense.service */ "./src/app/services/tense.service.ts");
-/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/authentication.service */ "./src/app/services/authentication.service.ts");
-/* harmony import */ var _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/reading/reading-service.service */ "./src/app/services/reading/reading-service.service.ts");
-/* harmony import */ var _angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../angular-bootstrap-md */ "./angular-bootstrap-md/esm5/angular-bootstrap-md.es5.js");
-/* harmony import */ var _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./authentication/auth.guard */ "./src/app/authentication/auth.guard.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app-routing/app-routing.module */ "./src/app/app-routing/app-routing.module.ts");
-/* harmony import */ var _writing_writing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./writing/writing.component */ "./src/app/writing/writing.component.ts");
-/* harmony import */ var _reading_reading_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./reading/reading.component */ "./src/app/reading/reading.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./e-grammar/e-grammar.component */ "./src/app/e-grammar/e-grammar.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./tense-details/tense-details.module */ "./src/app/tense-details/tense-details.module.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./e-grammar/tense-detail/tense-detail.component */ "./src/app/e-grammar/tense-detail/tense-detail.component.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
-/* harmony import */ var _listening_listening_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./listening/listening.component */ "./src/app/listening/listening.component.ts");
-/* harmony import */ var _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./listening/elementary/elementary.component */ "./src/app/listening/elementary/elementary.component.ts");
-/* harmony import */ var _listening_elementary_lesson_detail_lesson_detail_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./listening/elementary/lesson-detail/lesson-detail.component */ "./src/app/listening/elementary/lesson-detail/lesson-detail.component.ts");
-/* harmony import */ var _reading_i_reading_i_reading_detail_i_reading_detail_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./reading/i-reading/i-reading-detail/i-reading-detail.component */ "./src/app/reading/i-reading/i-reading-detail/i-reading-detail.component.ts");
-/* harmony import */ var _reading_i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./reading/i-reading/i-reading.component */ "./src/app/reading/i-reading/i-reading.component.ts");
-/* harmony import */ var _reading_i_reading_i_reading_menu_i_reading_menu_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./reading/i-reading/i-reading-menu/i-reading-menu.component */ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.ts");
+/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng2-charts */ "./node_modules/ng2-charts/index.js");
+/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(ng2_charts__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _services_tense_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/tense.service */ "./src/app/services/tense.service.ts");
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/authentication.service */ "./src/app/services/authentication.service.ts");
+/* harmony import */ var _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./services/reading/reading-service.service */ "./src/app/services/reading/reading-service.service.ts");
+/* harmony import */ var _angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../../angular-bootstrap-md */ "./angular-bootstrap-md/esm5/angular-bootstrap-md.es5.js");
+/* harmony import */ var _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./authentication/auth.guard */ "./src/app/authentication/auth.guard.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-routing/app-routing.module */ "./src/app/app-routing/app-routing.module.ts");
+/* harmony import */ var _writing_writing_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./writing/writing.component */ "./src/app/writing/writing.component.ts");
+/* harmony import */ var _reading_reading_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./reading/reading.component */ "./src/app/reading/reading.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./e-grammar/e-grammar.component */ "./src/app/e-grammar/e-grammar.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./tense-details/tense-details.module */ "./src/app/tense-details/tense-details.module.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./e-grammar/tense-detail/tense-detail.component */ "./src/app/e-grammar/tense-detail/tense-detail.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _listening_listening_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./listening/listening.component */ "./src/app/listening/listening.component.ts");
+/* harmony import */ var _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./listening/elementary/elementary.component */ "./src/app/listening/elementary/elementary.component.ts");
+/* harmony import */ var _listening_elementary_lesson_detail_lesson_detail_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./listening/elementary/lesson-detail/lesson-detail.component */ "./src/app/listening/elementary/lesson-detail/lesson-detail.component.ts");
+/* harmony import */ var _reading_i_reading_i_reading_detail_i_reading_detail_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./reading/i-reading/i-reading-detail/i-reading-detail.component */ "./src/app/reading/i-reading/i-reading-detail/i-reading-detail.component.ts");
+/* harmony import */ var _reading_i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./reading/i-reading/i-reading.component */ "./src/app/reading/i-reading/i-reading.component.ts");
+/* harmony import */ var _reading_i_reading_i_reading_menu_i_reading_menu_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./reading/i-reading/i-reading-menu/i-reading-menu.component */ "./src/app/reading/i-reading/i-reading-menu/i-reading-menu.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6241,46 +6524,48 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _writing_writing_component__WEBPACK_IMPORTED_MODULE_12__["WritingComponent"],
-                _header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"],
-                _reading_reading_component__WEBPACK_IMPORTED_MODULE_13__["ReadingComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"],
-                _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_15__["EGrammarComponent"],
-                _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_19__["TenseDetailComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_20__["LoginComponent"],
-                _register_register_component__WEBPACK_IMPORTED_MODULE_21__["RegisterComponent"],
-                _listening_listening_component__WEBPACK_IMPORTED_MODULE_22__["ListeningComponent"],
-                _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_23__["ElementaryComponent"],
-                _listening_elementary_lesson_detail_lesson_detail_component__WEBPACK_IMPORTED_MODULE_24__["LessonDetailComponent"],
-                _reading_i_reading_i_reading_detail_i_reading_detail_component__WEBPACK_IMPORTED_MODULE_25__["IReadingDetailComponent"],
-                _reading_i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_26__["IReadingComponent"],
-                _reading_i_reading_i_reading_menu_i_reading_menu_component__WEBPACK_IMPORTED_MODULE_27__["IReadingMenuComponent"],
+                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                _writing_writing_component__WEBPACK_IMPORTED_MODULE_13__["WritingComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_11__["HeaderComponent"],
+                _reading_reading_component__WEBPACK_IMPORTED_MODULE_14__["ReadingComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_15__["HomeComponent"],
+                _e_grammar_e_grammar_component__WEBPACK_IMPORTED_MODULE_16__["EGrammarComponent"],
+                _e_grammar_tense_detail_tense_detail_component__WEBPACK_IMPORTED_MODULE_20__["TenseDetailComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_21__["LoginComponent"],
+                _register_register_component__WEBPACK_IMPORTED_MODULE_22__["RegisterComponent"],
+                _listening_listening_component__WEBPACK_IMPORTED_MODULE_23__["ListeningComponent"],
+                _listening_elementary_elementary_component__WEBPACK_IMPORTED_MODULE_24__["ElementaryComponent"],
+                _listening_elementary_lesson_detail_lesson_detail_component__WEBPACK_IMPORTED_MODULE_25__["LessonDetailComponent"],
+                _reading_i_reading_i_reading_detail_i_reading_detail_component__WEBPACK_IMPORTED_MODULE_26__["IReadingDetailComponent"],
+                _reading_i_reading_i_reading_component__WEBPACK_IMPORTED_MODULE_27__["IReadingComponent"],
+                _reading_i_reading_i_reading_menu_i_reading_menu_component__WEBPACK_IMPORTED_MODULE_28__["IReadingMenuComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
-                _angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_7__["MDBBootstrapModule"].forRoot(),
-                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["ReactiveFormsModule"],
-                _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_11__["AppRoutingModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"],
-                _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_17__["tenses"]
+                _angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_8__["MDBBootstrapModule"].forRoot(),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_10__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_10__["ReactiveFormsModule"],
+                _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_12__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClientModule"],
+                _tense_details_tense_details_module__WEBPACK_IMPORTED_MODULE_18__["tenses"],
+                ng2_charts__WEBPACK_IMPORTED_MODULE_3__["ChartsModule"]
             ],
             providers: [
-                { provide: _angular_common__WEBPACK_IMPORTED_MODULE_18__["APP_BASE_HREF"], useValue: '/' },
-                _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"],
-                _services_tense_service__WEBPACK_IMPORTED_MODULE_4__["TenseService"],
-                _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_6__["ReadingService"],
-                _services_authentication_service__WEBPACK_IMPORTED_MODULE_5__["authenticationService"]
+                { provide: _angular_common__WEBPACK_IMPORTED_MODULE_19__["APP_BASE_HREF"], useValue: '/' },
+                _authentication_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"],
+                _services_tense_service__WEBPACK_IMPORTED_MODULE_5__["TenseService"],
+                _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_7__["ReadingService"],
+                _services_authentication_service__WEBPACK_IMPORTED_MODULE_6__["authenticationService"]
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
             schemas: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["NO_ERRORS_SCHEMA"]]
         })
     ], AppModule);
@@ -6344,7 +6629,7 @@ var AuthGuard = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" >\n        <div class=\"btn-group pt-4 ml-15\">\n            <button class=\"btn btn-primary btn-lg dropdown-toggle\" \n                    type=\"button\" \n                    data-toggle=\"dropdown\"\n                    aria-haspopup=\"true\"\n                    aria-expanded=\"false\"\n                    mdbWavesEffect\n                    >\n                {{selectTense}}\n            </button>\n            <div class=\"dropdown-menu dropdown dropdown-info\" >\n                <a class=\"dropdown-item\" (click)=\"selectTenses('Present')\">Present</a>\n                <div class=\"dropdown-divider\"></div>\n                <a class=\"dropdown-item\" (click)=\"selectTenses('Past')\">Past</a>\n                <div class=\"dropdown-divider\"></div>\n                <a class=\"dropdown-item\" (click)=\"selectTenses('Future')\">Future</a>\n            </div>\n        </div>\n        <div class=\"btn-group pt-4\">\n            <button class=\"btn btn-primary btn-lg dropdown-toggle\" \n                    type=\"button\" \n                    data-toggle=\"dropdown\" \n                    aria-haspopup=\"true\" \n                    aria-expanded=\"false\">\n               {{selectForm}}\n            </button>\n            <div class=\"dropdown-menu dropdown dropdown-info\">\n                <a class=\"dropdown-item\" (click)=\"selectForms('Simple')\">Simple</a>\n                <div class=\"dropdown-divider\"></div>\n                <a class=\"dropdown-item\" (click)=\"selectForms('Progressive')\"> Progressive</a>\n                <div class=\"dropdown-divider\"></div>\n                <a class=\"dropdown-item\" (click)=\"selectForms('Perfect')\">Perfect</a>\n            </div>\n            \n        </div>\n        <div *ngIf=\"goto === true\">\n            <app-tense-detail [tenName]=\"tenseName\"></app-tense-detail>\n        </div>\n        \n</div>\n        <!-- <div *ngIf=\"flag3 === true\" >\n            <h2 class=\"h1-responsive font-weight-bold my-4\">{{tenseData.name}}</h2>\n        </div>\n        <div *ngIf=\"flag4=='start'\">\n            <div *ngFor=\"let question of quest\">\n                <button class=\"btn blue-gradient btn-rounded btn-sm\">\n                    Question {{page.index + 1}} of {{page.count}}\n                </button>\n                <div class=\"pat-3\">\n                    <p class=\"lead font-weight-bold w-responsive mx-auto left\">{{page.index + 1}}. <span [innerHTML]=\"question.name\"></span></p>\n                </div>\n                <div class=\"pt-3\">\n                    <div  *ngFor=\"let option of question.options\">\n                        <div class=\"input-group\" >\n                                <div class=\"input-group-prepend text-center\">\n                                    <div class=\"input-group-text\" \n                                         id=\"btnGroupAddon\"\n                                         [ngStyle]=\"{'background-color':id === option.id  ? '#ffbb33' : 'white'}\">\n                                         {{option.id}}\n                                    </div>\n                                </div>\n                                <div   \n                                       [ngStyle]=\"{'background-color':id === option.id ? '#33b5e5' : 'white'}\"\n                                       class=\"form-control text-left\" \n                                       id={{option.id}} \n                                       (click)=\"onSelect(option);\"\n                                       aria-label=\"Input group example\" \n                                       aria-describedby=\"btnGroupAddon\"\n                                       \n                                >\n                                    {{option.name}}\n                                    <div *ngIf=\"confirm === true && id === option.id\">\n                                        <button type=\"button\" class=\"btn primary-color-dark waves-light\" (click)=\"checkAns(question, option)\"mdbWavesEffect>Confirm</button>\n                                    </div>\n                                    <div *ngIf=\"isAns === true && id === option.id\">\n                                        {{correct}}\n                                    </div>\n                                    <div *ngIf=\"flag5 === true && id === option.id\">\n                                        <p>Incorrect: read this article</p>\n                                        <div></div>\n                                       {{commend}}\n                                    </div>\n                                </div>\n                                <br>\n                                \n                        </div>\n                        <br> \n                    </div>\n                </div>\n                <br> \n                <br>\n                <footer class=\"footer-copyright fixed-bottom blue py-3 text-center text-white\">\n                    <i class=\"fa fa-fast-backward pr-5 fa-lg\" (click)=\"goto(tenseData,0)\"></i>\n                    <i class=\"fa fa-backward pr-5 fa-lg\" (click)=\"goto(tenseData,page.index -1)\"></i>\n                    <i class=\"fa fa-forward pr-5 fa-lg\" (click)=\"goto(tenseData,page.index + 1)\"></i>\n                    <i class=\"fa fa-fast-forward fa-lg\" (click)=\"goto(tenseData,page.count-1)\"></i>\n                  </footer>\n        </div>        -->\n\n\n    \n    "
+module.exports = "<div class=\"container\" >\n    <app-header></app-header>\n        <div class=\"btn-group pt-4 ml-15\">\n            <button class=\"btn btn-primary btn-lg dropdown-toggle\" \n                    type=\"button\" \n                    data-toggle=\"dropdown\"\n                    aria-haspopup=\"true\"\n                    aria-expanded=\"false\"\n                    mdbWavesEffect\n                    >\n                {{selectTense}}\n            </button>\n            <div class=\"dropdown-menu dropdown dropdown-info\" >\n                <a class=\"dropdown-item\" (click)=\"selectTenses('Present')\">Present</a>\n                <div class=\"dropdown-divider\"></div>\n                <a class=\"dropdown-item\" (click)=\"selectTenses('Past')\">Past</a>\n                <div class=\"dropdown-divider\"></div>\n                <a class=\"dropdown-item\" (click)=\"selectTenses('Future')\">Future</a>\n            </div>\n        </div>\n        <div class=\"btn-group pt-4\">\n            <button class=\"btn btn-primary btn-lg dropdown-toggle\" \n                    type=\"button\" \n                    data-toggle=\"dropdown\" \n                    aria-haspopup=\"true\" \n                    aria-expanded=\"false\">\n               {{selectForm}}\n            </button>\n            <div class=\"dropdown-menu dropdown dropdown-info\">\n                <a class=\"dropdown-item\" (click)=\"selectForms('Simple')\">Simple</a>\n                <div class=\"dropdown-divider\"></div>\n                <a class=\"dropdown-item\" (click)=\"selectForms('Progressive')\"> Progressive</a>\n                <div class=\"dropdown-divider\"></div>\n                <a class=\"dropdown-item\" (click)=\"selectForms('Perfect')\">Perfect</a>\n            </div>\n            \n        </div>\n        <div *ngIf=\"goto === true\">\n            <app-tense-detail [tenName]=\"tenseName\"></app-tense-detail>\n        </div>\n        \n</div>\n        <!-- <div *ngIf=\"flag3 === true\" >\n            <h2 class=\"h1-responsive font-weight-bold my-4\">{{tenseData.name}}</h2>\n        </div>\n        <div *ngIf=\"flag4=='start'\">\n            <div *ngFor=\"let question of quest\">\n                <button class=\"btn blue-gradient btn-rounded btn-sm\">\n                    Question {{page.index + 1}} of {{page.count}}\n                </button>\n                <div class=\"pat-3\">\n                    <p class=\"lead font-weight-bold w-responsive mx-auto left\">{{page.index + 1}}. <span [innerHTML]=\"question.name\"></span></p>\n                </div>\n                <div class=\"pt-3\">\n                    <div  *ngFor=\"let option of question.options\">\n                        <div class=\"input-group\" >\n                                <div class=\"input-group-prepend text-center\">\n                                    <div class=\"input-group-text\" \n                                         id=\"btnGroupAddon\"\n                                         [ngStyle]=\"{'background-color':id === option.id  ? '#ffbb33' : 'white'}\">\n                                         {{option.id}}\n                                    </div>\n                                </div>\n                                <div   \n                                       [ngStyle]=\"{'background-color':id === option.id ? '#33b5e5' : 'white'}\"\n                                       class=\"form-control text-left\" \n                                       id={{option.id}} \n                                       (click)=\"onSelect(option);\"\n                                       aria-label=\"Input group example\" \n                                       aria-describedby=\"btnGroupAddon\"\n                                       \n                                >\n                                    {{option.name}}\n                                    <div *ngIf=\"confirm === true && id === option.id\">\n                                        <button type=\"button\" class=\"btn primary-color-dark waves-light\" (click)=\"checkAns(question, option)\"mdbWavesEffect>Confirm</button>\n                                    </div>\n                                    <div *ngIf=\"isAns === true && id === option.id\">\n                                        {{correct}}\n                                    </div>\n                                    <div *ngIf=\"flag5 === true && id === option.id\">\n                                        <p>Incorrect: read this article</p>\n                                        <div></div>\n                                       {{commend}}\n                                    </div>\n                                </div>\n                                <br>\n                                \n                        </div>\n                        <br> \n                    </div>\n                </div>\n                <br> \n                <br>\n                <footer class=\"footer-copyright fixed-bottom blue py-3 text-center text-white\">\n                    <i class=\"fa fa-fast-backward pr-5 fa-lg\" (click)=\"goto(tenseData,0)\"></i>\n                    <i class=\"fa fa-backward pr-5 fa-lg\" (click)=\"goto(tenseData,page.index -1)\"></i>\n                    <i class=\"fa fa-forward pr-5 fa-lg\" (click)=\"goto(tenseData,page.index + 1)\"></i>\n                    <i class=\"fa fa-fast-forward fa-lg\" (click)=\"goto(tenseData,page.count-1)\"></i>\n                  </footer>\n        </div>        -->\n\n\n    \n    "
 
 /***/ }),
 
@@ -6594,7 +6879,7 @@ var TenseDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--Main Navigation-->\n<header>\n\n  <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark indigo text-center\">\n      <a class=\"navbar-brand\" routerLink=\"/home\"><strong><h2>English tutorials</h2></strong></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n          <ul class=\"navbar-nav mr-auto\" >\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Listening<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/listen-elementary\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Speaking<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Reading<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/reading\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/i-reading\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Writing<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n                <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\">\n                Grammar<span class=\"caret\"></span></a>\n                <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/e-grammar\">Elementary Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n                </div>\n              </li>\n          </ul>\n          <form class=\"form-inline waves-light\" mdbWavesEffect>\n              <div class=\"md-form mt-45\">\n                  <input class=\"form-control mr-sm-20\" type=\"text\" placeholder=\"Search\">\n              </div>\n          </form>\n          <button type=\"button\" class=\"btn btn-round btn-outline-default\" mdbWavesEffect>\n            <ul class=\"navbar-nav nav-flex-icons\">\n                <li class=\"nav-item\">\n                    <a *ngIf=\"logout\" class=\"nav-link\" routerLink=\"/login\">LOG IN &emsp;<i class=\"fa fa-sign-in\"></i></a>\n                    <a *ngIf=\"login\" class=\"nav-link\" routerLink=\"/login\">LOGOUT &emsp;<i class=\"fa fa-sign-out\"></i></a>\n\n                </li>\n            </ul>\n          </button>\n      </div>\n  </nav>\n\n</header>\n<!--Main Navigation-->\n"
+module.exports = "<!--Main Navigation-->\n<header>\n\n  <nav class=\"navbar fixed-top navbar-expand-lg navbar-dark indigo text-center\">\n      <a class=\"navbar-brand\" routerLink=\"/home\"><strong><h2>English tutorials</h2></strong></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n          <ul class=\"navbar-nav mr-auto\" >\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Listening<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/listen-elementary\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Speaking<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Reading<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/reading\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/i-reading\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n              <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Writing<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Elementary Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n              </div>\n            </li>\n            <li class=\"nav-item dropdown\" dropdown>\n                <a dropdownToggle mdbWavesEffect type=\"button\" class=\"nav-link dropdown-toggle waves-light\">\n                Grammar<span class=\"caret\"></span></a>\n                <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect routerLink=\"/e-grammar\">Elementary Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Intermediate Level</a>\n                    <div class=\"divider dropdown-divider\"></div>\n                    <a class=\"dropdown-item waves-light\" mdbWavesEffect href=\"#\">Advanced Level</a>\n                </div>\n              </li>\n          </ul>\n          <!-- <form class=\"form-inline waves-light\" mdbWavesEffect>\n              <div class=\"md-form mt-45\">\n                  <input class=\"form-control mr-sm-20\" type=\"text\" placeholder=\"Search\">\n              </div>\n          </form> -->\n          <button type=\"button\" class=\"btn btn-round btn-outline-default\" mdbWavesEffect>\n            <ul class=\"navbar-nav nav-flex-icons\">\n                <li class=\"nav-item\">\n                    <a *ngIf=\"logout\" class=\"nav-link\" routerLink=\"/login\">LOG IN &emsp;<i class=\"fa fa-sign-in\"></i></a>\n                    <a *ngIf=\"login\" class=\"nav-link\" routerLink=\"/login\">LOGOUT &emsp;<i class=\"fa fa-sign-out\"></i></a>\n\n                </li>\n            </ul>\n          </button>\n      </div>\n  </nav>\n\n</header>\n<!--Main Navigation-->\n"
 
 /***/ }),
 
@@ -6637,10 +6922,9 @@ var HeaderComponent = /** @class */ (function () {
         this.auth = auth;
     }
     HeaderComponent.prototype.ngOnInit = function () {
-        debugger;
         if (localStorage.getItem('currentUser')) {
             this.a = JSON.parse(localStorage.getItem('currentUser'));
-            if (this.a['status'] === "OK") {
+            if (this.a) {
                 this.login = true;
             }
             else {
@@ -6674,7 +6958,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<main>\n    <!-- <div class=\"container\" style=\"height:1300px;\">\n      <section class=\"text-center feature-box pt-5\"> -->\n          <div class=\"view intro-2 pt-30\">\n              <div class=\"full-bg-img\">\n                  <div class=\"mask rgba-black-light flex-center\">\n                      <div class=\"container\">\n                          <div class=\"white-text text-center wow fadeInUp\">\n                              <h2>English isn't hard</h2>\n                              <h5>Start learning something everyday</h5>\n                              <br>\n                              <p>The order Listening, Speaking, Reading, and Writing is need to be repeated when you learn English </p>\n                          </div>\n                      </div>\n                  </div>\n              </div>\n          </div>\n          <section class=\"text-center pt-5 pb-2\">\n              <h3 class=\"wow fadeIn\" style=\"visibility: visible; animation-name: fadeIn;\">Our Portfolio </h3>\n          </section>\n          <!--Grid row-->\n          <div class=\"row my-4\">\n              <!--Grid column-->\n              <div class=\"col-lg-4 col-md-12\">\n                  <img src=\"assets/images/bechi1.jpg\" class=\"img-fluid z-depth-2 rounded\" alt=\"First sample image\">\n              </div>\n               <!--Grid column-->\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi2.jpg\" class=\"img-fluid z-depth-3 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi3.jpg\" class=\"img-fluid z-depth-4 rounded\" alt=\"First sample image\">\n              </div>\n          </div>\n          <!--Grid row-->\n          <div class=\"row my-4\">\n              <div class=\"col-lg-4 col-md-12\">\n                  <img src=\"assets/images/bechi4.jpg\" class=\"img-fluid z-depth-2 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi5.jpg\" class=\"img-fluid z-depth-3 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi6.jpg\" class=\"img-fluid z-depth-4 rounded\" alt=\"First sample image\">\n              </div>\n            \n          </div>\n          <div class=\"row my-4\">\n              <div class=\"col-lg-4 col-md-12\">\n                  <img src=\"assets/images/bechi7.jpg\" class=\"img-fluid z-depth-2 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi8.jpg\" class=\"img-fluid z-depth-3 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi6.jpg\" class=\"img-fluid z-depth-4 rounded\" alt=\"First sample image\">\n              </div>\n            \n          </div>\n\n  </main>\n  \n"
+module.exports = "<main>\n    <app-header></app-header>\n    <!-- <div class=\"container\" style=\"height:1300px;\">\n      <section class=\"text-center feature-box pt-5\"> -->\n          <div class=\"view intro-2 pt-30\">\n              <div class=\"full-bg-img\">\n                  <div class=\"mask rgba-black-light flex-center\">\n                      <div class=\"container\">\n                          <div class=\"white-text text-center wow fadeInUp\">\n                              <h2>English isn't hard</h2>\n                              <h5>Start learning something everyday</h5>\n                              <br>\n                              <p>The order Listening, Speaking, Reading, and Writing is need to be repeated when you learn English </p>\n                          </div>\n                      </div>\n                  </div>\n              </div>\n          </div>\n          <section class=\"text-center pt-5 pb-2\">\n              <h3 class=\"wow fadeIn\" style=\"visibility: visible; animation-name: fadeIn;\">Our Portfolio </h3>\n          </section>\n          <!--Grid row-->\n          <div class=\"row my-4\">\n              <!--Grid column-->\n              <div class=\"col-lg-4 col-md-12\">\n                  <img src=\"assets/images/bechi.jpg\" class=\"img-fluid z-depth-2 rounded\" alt=\"First sample image\">\n              </div>\n               <!--Grid column-->\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi0.jpg\" class=\"img-fluid z-depth-3 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi2.jpg\" class=\"img-fluid z-depth-4 rounded\" alt=\"First sample image\">\n              </div>\n          </div>\n          <!-- Grid row\n          <div class=\"row my-4\">\n              <div class=\"col-lg-4 col-md-12\">\n                  <img src=\"assets/images/bechi4.jpg\" class=\"img-fluid z-depth-2 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi5.jpg\" class=\"img-fluid z-depth-3 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi6.jpg\" class=\"img-fluid z-depth-4 rounded\" alt=\"First sample image\">\n              </div>\n            \n          </div>\n          <div class=\"row my-4\">\n              <div class=\"col-lg-4 col-md-12\">\n                  <img src=\"assets/images/bechi7.jpg\" class=\"img-fluid z-depth-2 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi8.jpg\" class=\"img-fluid z-depth-3 rounded\" alt=\"First sample image\">\n              </div>\n              <div class=\"col-lg-4 col-md-6\">\n                  <img src=\"assets/images/bechi6.jpg\" class=\"img-fluid z-depth-4 rounded\" alt=\"First sample image\">\n              </div>\n            \n          </div> -->\n\n  </main>\n  \n"
 
 /***/ }),
 
@@ -7051,10 +7335,10 @@ var categories = /** @class */ (function () {
     function categories(data) {
         var _this = this;
         if (data) {
-            this.title = data.title;
-            this.content = [];
-            data.content.forEach(function (element) {
-                _this.content.push(new _category_model__WEBPACK_IMPORTED_MODULE_0__["category"](element));
+            this.name = data.name;
+            this.response = [];
+            data.forEach(function (element) {
+                _this.response.push(new _category_model__WEBPACK_IMPORTED_MODULE_0__["category"](element));
             });
         }
     }
@@ -7077,9 +7361,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "category", function() { return category; });
 var category = /** @class */ (function () {
     function category(data) {
-        this.id = data.id;
+        this.levelId = data.levelId;
+        this.categoryId = data.categoryId;
+        this.categoryName = data.categoryName;
         this.src_img = data.src_img;
-        this.title = data.title;
     }
     return category;
 }());
@@ -7088,55 +7373,97 @@ var category = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/models/reading/lessons.model.ts":
-/*!*************************************************!*\
-  !*** ./src/app/models/reading/lessons.model.ts ***!
-  \*************************************************/
-/*! exports provided: readingLessons */
+/***/ "./src/app/models/reading/i-reading/lesson.model.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/models/reading/i-reading/lesson.model.ts ***!
+  \**********************************************************/
+/*! exports provided: oneLesson */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "readingLessons", function() { return readingLessons; });
-/* harmony import */ var _reading_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./reading.model */ "./src/app/models/reading/reading.model.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "oneLesson", function() { return oneLesson; });
+/* harmony import */ var _questions_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./questions.model */ "./src/app/models/reading/i-reading/questions.model.ts");
 
-var readingLessons = /** @class */ (function () {
-    function readingLessons(data) {
+var oneLesson = /** @class */ (function () {
+    function oneLesson(data) {
         var _this = this;
         if (data) {
-            this.name = data.name;
+            this.lessonId = data.lessonId;
+            this.categoryId = data.categoryId;
             this.title = data.title;
-            this.lessons = [];
-            data.lessons.forEach(function (el) {
-                _this.lessons.push(new _reading_model__WEBPACK_IMPORTED_MODULE_0__["readingModel"](el));
+            this.content = data.content;
+            this.audioUrl = data.audioUrl;
+            this.questions = [];
+            data.questions.forEach(function (element) {
+                _this.questions.push(new _questions_model__WEBPACK_IMPORTED_MODULE_0__["questions"](element));
             });
         }
     }
-    return readingLessons;
+    return oneLesson;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/models/reading/reading.model.ts":
-/*!*************************************************!*\
-  !*** ./src/app/models/reading/reading.model.ts ***!
-  \*************************************************/
-/*! exports provided: readingModel */
+/***/ "./src/app/models/reading/i-reading/mutipleChoice.model.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/models/reading/i-reading/mutipleChoice.model.ts ***!
+  \*****************************************************************/
+/*! exports provided: multipleChoice */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "readingModel", function() { return readingModel; });
-var readingModel = /** @class */ (function () {
-    function readingModel(data) {
-        this.id = data.healthId;
-        this.title = data.title;
-        this.audio = data.audio;
-        this.content = data.content;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "multipleChoice", function() { return multipleChoice; });
+var multipleChoice = /** @class */ (function () {
+    function multipleChoice(data) {
+        if (data) {
+            this.id = data.id;
+            this.content = data.content;
+            this.answer = data.answer;
+        }
     }
-    return readingModel;
+    return multipleChoice;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/models/reading/i-reading/questions.model.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/models/reading/i-reading/questions.model.ts ***!
+  \*************************************************************/
+/*! exports provided: questions */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "questions", function() { return questions; });
+/* harmony import */ var _mutipleChoice_model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mutipleChoice.model */ "./src/app/models/reading/i-reading/mutipleChoice.model.ts");
+
+var questions = /** @class */ (function () {
+    function questions(data) {
+        var _this = this;
+        if (data) {
+            if (data.answer.length === 0) {
+                this.answer = [];
+            }
+            else {
+                this.answer = data.answer;
+            }
+            this.questionId = data.questionId;
+            this.content = data.content;
+            this.answer = data.answer;
+            this.multipleChoices = [];
+            data.multipleChoices.forEach(function (element) {
+                _this.multipleChoices.push(new _mutipleChoice_model__WEBPACK_IMPORTED_MODULE_0__["multipleChoice"](element));
+            });
+        }
+    }
+    return questions;
 }());
 
 
@@ -7150,7 +7477,7 @@ var readingModel = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main\">\n      <div *ngFor=\"let question of lesson;\">\n        <audio controls class=\"header__audio\">\n            <source src=\"#\" type=\"audio/ogg\">\n            <source src={{question.audio}} type=\"audio/mpeg\">\n            Your browser does not support the audio element.\n        </audio>\n        <div class=\"header__title\">\n                {{question.title}}\n                <div>\n                    <button class=\"btn btn-primary btn-sm\">\n                        Reading {{page.index}} of {{page.num-1}}\n                    </button>\n                </div>\n\n        </div>\n          \n          <div class=\"body\" [innerHTML] =\"question.content\" ></div>\n      </div>\n\n</div>\n<footer class=\"footer-copyright fixed-bottom \">\n    <div class = \"blue py-3 text-center text-white\">\n    <i class=\"fa fa-fast-backward pr-5 fa-lg\" (click)=\"goto(0)\"></i>\n    <i class=\"fa fa-backward pr-5 fa-lg\" (click)=\"goto(page.index - 1)\"></i>\n    <i class=\"fa fa-forward pr-5 fa-lg\" (click)=\"goto(page.index + 1)\"></i>\n    <i class=\"fa fa-fast-forward fa-lg\" (click)=\"goto(page.num-1)\"></i>\n    </div>\n  </footer>"
+module.exports = "\n\n<div [className]=\"!reading ? 'main' : 'main1'\">\n    <app-header></app-header>\n    <div>\n        <audio controls class=\"header__audio\">\n            <source src=\"#\" type=\"audio/ogg\">\n            <source src={{oneLesson.audioUrl}} type=\"audio/mpeg\">\n            Your browser does not support the audio element.\n        </audio>\n    <div class=\"header__title\">\n        {{oneLesson.title}}\n        <div>\n            <button *ngIf=\"!reading\" class=\"btn btn-primary btn-sm\" (click)=\"goRead()\">\n                    READING\n            </button>\n            <button *ngIf=\"reading\" class=\"btn btn-primary btn-sm\" (click)=\"goPratice()\">\n                PRACTICE\n            </button>\n        </div>\n    </div> \n        <img class=\"loading\" *ngIf=\"loading\" src=\"assets/images/Ripple.gif\" />\n        <!-- test -->\n        <div class=\"container body\">\n            <div class=\"row\">\n                <div class=\"col-lg-4 col-sm-4\">\n                    <div style=\"display: block\">\n                        <canvas baseChart\n                                [datasets]=\"barChartData\"\n                                [labels]=\"barChartLabels\"\n                                [options]=\"barChartOptions\"\n                                [legend]=\"barChartLegend\"\n                                [chartType]=\"barChartType\">\n                        </canvas>\n                      </div>\n                    \n                </div> \n                <div class=\"col-lg-8 col-sm-8\" *ngIf=\"reading\" [innerHTML] =\"oneLesson.content\" ></div> \n        \n            </div>\n        </div>\n        \n        <!-- test -->\n        \n        <div *ngIf=\"!reading\" class=\"centered\">\n            <div *ngFor=\"let question of questions\">\n                <button class=\"btn blue-gradient btn-rounded btn-sm\">\n                    Question {{page.index + 1}} of {{page.num}}\n                </button>\n                <div>\n                    <p class=\"lead font-weight-bold w-responsive left\">\n                    {{page.index + 1 }}. <span>{{question.content}}</span> \n                    </p>\n                </div>\n                <div *ngFor=\"let option of question.multipleChoices\">\n                    <div class=\"input-group\">\n                        <div class=\"input-group-prepend text-center\">\n                            <div class=\"input-group-text\">\n                                {{option.id}}\n                            </div>\n                        </div>\n                        <div class=\"form-control text-left\">\n                            <!-- [ngStyle]=\"{'background-color': ansOptId === option.id ? correctColor : uncorrectColor}\"\n                            > -->\n                            {{option.content}}\n                            <div *ngIf=\"!question.visited\">\n                                <button type=\"button\" (click)=\"getAnswer(oneLesson.lessonId,question.questionId,option.id)\" class=\"btn primary-color-dark btn-rounded\" mdbWavesEffect>\n                                    Confirm\n                                </button>\n                            </div>\n                        </div>\n                    </div>              \n                </div>\n                <br>\n                <br>\n                <div *ngIf=\"question.visited\">\n                    <div *ngIf=\"!question.correct\">\n                        <div class=\"alert alert-danger\" role=\"alert\">\n                            <h2>WRONG </h2><p>Please read again</p>\n                        </div>\n                    </div>\n                    <div *ngIf=\"question.correct\">\n                        <div class=\"alert alert-success\" role=\"alert\">\n                            <h2>Correct </h2><p>Congratulation your answer correct</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>   \n    </div>\n</div>\n<footer class=\"footer-copyright fixed-bottom \">\n    <div class = \"blue py-3 text-center text-white\">\n    <i class=\"fa fa-fast-backward pr-5 fa-lg\" (click)=\"goto(0)\"></i>\n    <i class=\"fa fa-backward pr-5 fa-lg\" (click)=\"goto(page.index - 1)\"></i>\n    <i class=\"fa fa-forward pr-5 fa-lg\" (click)=\"goto(page.index + 1)\"></i>\n    <i class=\"fa fa-fast-forward fa-lg\" (click)=\"goto(page.num-1)\"></i>\n    </div>\n  </footer>"
 
 /***/ }),
 
@@ -7161,7 +7488,7 @@ module.exports = "<div class=\"main\">\n      <div *ngFor=\"let question of less
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header__title {\n  display: block;\n  width: 100%;\n  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);\n  background-size: cover;\n  background-position: top;\n  text-align: center;\n  top: 2.5vh;\n  padding-top: 5rem;\n  position: relative;\n  font-size: 4.5vh;\n  z-index: 1; }\n\n.header__audio {\n  position: absolute;\n  width: 300px;\n  height: 300px;\n  bottom: 60px;\n  right: 25%;\n  left: 50%;\n  margin-left: -150px;\n  position: -webkit-sticky;\n  position: fixed;\n  z-index: 3000; }\n\n.body {\n  position: absolute;\n  margin-top: 8vh;\n  font-size: 1.2rem;\n  padding: 1.5rem;\n  z-index: 1;\n  margin-bottom: 7rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLWRldGFpbC9pLXJlYWRpbmctZGV0YWlsLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtBO0VBQ1EsZUFBYTtFQUNiLFlBQVc7RUFDWCxxRUFBK0c7RUFDL0csdUJBQXNCO0VBQ3RCLHlCQUF3QjtFQUN4QixtQkFBa0I7RUFDbEIsV0FBUztFQUNULGtCQUFpQjtFQUNqQixtQkFBa0I7RUFDbEIsaUJBQWdCO0VBQ2hCLFdBQVUsRUFDakI7O0FBRUQ7RUFDSSxtQkFBaUI7RUFDakIsYUFBVztFQUNYLGNBQVk7RUFDWixhQUFXO0VBQ1gsV0FBUztFQUNULFVBQVE7RUFDUixvQkFBa0I7RUFDbEIseUJBQXdCO0VBQ3hCLGdCQUFlO0VBRWYsY0FBYSxFQUNoQjs7QUFFRDtFQUNJLG1CQUFrQjtFQUNsQixnQkFBYztFQUNkLGtCQUFpQjtFQUNqQixnQkFBZTtFQUNmLFdBQVU7RUFDVixvQkFBbUIsRUFFdEIiLCJmaWxlIjoic3JjL2FwcC9yZWFkaW5nL2ktcmVhZGluZy9pLXJlYWRpbmctZGV0YWlsL2ktcmVhZGluZy1kZXRhaWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIkY29sb3ItcHJpbWFyeTogIzU1YzU3YTtcbiRjb2xvci1wcmltYXJ5LWxpZ2h0OiAjN2VkNTZmO1xuJGNvbG9yLXByaW1hcnktZGFyazogIzI4YjQ4NTtcbiRjb2xvci1ncmV5LWRhcms6IGJsYWNrO1xuXG4uaGVhZGVyX190aXRsZXtcbiAgICAgICAgZGlzcGxheTpibG9jaztcbiAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byByaWdodCBib3R0b20sIHJnYmEoJGNvbG9yLXByaW1hcnktbGlnaHQsIDEpLCByZ2JhKCRjb2xvci1wcmltYXJ5LWRhcmssIDEpKTtcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogdG9wO1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgIHRvcDoyLjV2aDtcbiAgICAgICAgcGFkZGluZy10b3A6IDVyZW07XG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgICAgZm9udC1zaXplOiA0LjV2aDtcbiAgICAgICAgei1pbmRleDogMTsgICBcbn1cblxuLmhlYWRlcl9fYXVkaW97XG4gICAgcG9zaXRpb246YWJzb2x1dGU7XG4gICAgd2lkdGg6MzAwcHg7XG4gICAgaGVpZ2h0OjMwMHB4O1xuICAgIGJvdHRvbTo2MHB4O1xuICAgIHJpZ2h0OjI1JTtcbiAgICBsZWZ0OjUwJTtcbiAgICBtYXJnaW4tbGVmdDotMTUwcHg7XG4gICAgcG9zaXRpb246IC13ZWJraXQtc3RpY2t5O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICAvLyB0b3A6MTAuNXZoO1xuICAgIHotaW5kZXg6IDMwMDA7XG59IFxuXG4uYm9keXtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luLXRvcDo4dmg7XG4gICAgZm9udC1zaXplOiAxLjJyZW07XG4gICAgcGFkZGluZzogMS41cmVtO1xuICAgIHotaW5kZXg6IDE7XG4gICAgbWFyZ2luLWJvdHRvbTogN3JlbTtcbiAgICBcbn1cblxuXG5cblxuXG4iXX0= */"
+module.exports = ".main {\n  text-align: center; }\n\n.header__title {\n  display: block;\n  width: 100%;\n  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);\n  background-size: cover;\n  background-position: top;\n  text-align: center;\n  top: 2.5vh;\n  padding-top: 5rem;\n  position: relative;\n  font-size: 4.5vh;\n  z-index: 1; }\n\n.header__audio {\n  position: absolute;\n  width: 300px;\n  height: 300px;\n  bottom: 60px;\n  right: 25%;\n  left: 50%;\n  margin-left: -150px;\n  position: -webkit-sticky;\n  position: fixed;\n  z-index: 3000; }\n\n.body {\n  position: absolute;\n  margin-top: 8vh;\n  font-size: 1.2rem;\n  padding: 1.5rem;\n  z-index: 1;\n  margin-bottom: 7rem; }\n\n.blue-gradient {\n  color: #514A9D; }\n\n.btn-rounded {\n  border-radius: 15px; }\n\n.centered {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  /* bring your own prefixes */\n  -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  width: 50%;\n  z-index: 1; }\n\n.loading {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 50%; }\n\n@media only screen and (max-width: 640px), only screen and (max-width: 667px), only screen and (max-width: 480px) {\n  .centered {\n    position: relative;\n    margin-top: 77%;\n    left: 50%;\n    margin-bottom: 2%;\n    width: 95%; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLWRldGFpbC9pLXJlYWRpbmctZGV0YWlsLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtBO0VBQ0ksbUJBQWtCLEVBQ3JCOztBQUNEO0VBQ1EsZUFBYTtFQUNiLFlBQVc7RUFDWCxxRUFBK0c7RUFDL0csdUJBQXNCO0VBQ3RCLHlCQUF3QjtFQUN4QixtQkFBa0I7RUFDbEIsV0FBUztFQUNULGtCQUFpQjtFQUNqQixtQkFBa0I7RUFDbEIsaUJBQWdCO0VBQ2hCLFdBQVUsRUFDakI7O0FBRUQ7RUFDSSxtQkFBaUI7RUFDakIsYUFBVztFQUNYLGNBQVk7RUFDWixhQUFXO0VBQ1gsV0FBUztFQUNULFVBQVE7RUFDUixvQkFBa0I7RUFDbEIseUJBQXdCO0VBQ3hCLGdCQUFlO0VBRWYsY0FBYSxFQUNoQjs7QUFFRDtFQUNJLG1CQUFrQjtFQUNsQixnQkFBYztFQUNkLGtCQUFpQjtFQUNqQixnQkFBZTtFQUNmLFdBQVU7RUFDVixvQkFBbUIsRUFFdEI7O0FBQ0Q7RUFDSSxlQUFjLEVBQ2pCOztBQUNEO0VBQ0ksb0JBQW1CLEVBQ3RCOztBQUNEO0VBQ0ksbUJBQWtCO0VBQ2xCLFNBQVE7RUFDUixVQUFTO0VBQ1QsNkJBQTZCO0VBQzdCLHlDQUFnQztNQUFoQyxxQ0FBZ0M7VUFBaEMsaUNBQWdDO0VBQ2hDLFdBQVM7RUFDVCxXQUFVLEVBQ2I7O0FBQ0Q7RUFDSSxlQUFjO0VBQ2Qsa0JBQWlCO0VBQ2pCLG1CQUFrQjtFQUNsQixXQUFVLEVBQ2I7O0FBRUQ7RUFLSTtJQUNJLG1CQUFrQjtJQUNsQixnQkFBZTtJQUNmLFVBQVM7SUFDVCxrQkFBZ0I7SUFDaEIsV0FBVSxFQUNiLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9yZWFkaW5nL2ktcmVhZGluZy9pLXJlYWRpbmctZGV0YWlsL2ktcmVhZGluZy1kZXRhaWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIkY29sb3ItcHJpbWFyeTogIzU1YzU3YTtcbiRjb2xvci1wcmltYXJ5LWxpZ2h0OiAjN2VkNTZmO1xuJGNvbG9yLXByaW1hcnktZGFyazogIzI4YjQ4NTtcbiRjb2xvci1ncmV5LWRhcms6IGJsYWNrO1xuXG4ubWFpbntcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4uaGVhZGVyX190aXRsZXtcbiAgICAgICAgZGlzcGxheTpibG9jaztcbiAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCh0byByaWdodCBib3R0b20sIHJnYmEoJGNvbG9yLXByaW1hcnktbGlnaHQsIDEpLCByZ2JhKCRjb2xvci1wcmltYXJ5LWRhcmssIDEpKTtcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogdG9wO1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgIHRvcDoyLjV2aDtcbiAgICAgICAgcGFkZGluZy10b3A6IDVyZW07XG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgICAgZm9udC1zaXplOiA0LjV2aDtcbiAgICAgICAgei1pbmRleDogMTsgICBcbn1cblxuLmhlYWRlcl9fYXVkaW97XG4gICAgcG9zaXRpb246YWJzb2x1dGU7XG4gICAgd2lkdGg6MzAwcHg7XG4gICAgaGVpZ2h0OjMwMHB4O1xuICAgIGJvdHRvbTo2MHB4O1xuICAgIHJpZ2h0OjI1JTtcbiAgICBsZWZ0OjUwJTtcbiAgICBtYXJnaW4tbGVmdDotMTUwcHg7XG4gICAgcG9zaXRpb246IC13ZWJraXQtc3RpY2t5O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICAvLyB0b3A6MTAuNXZoO1xuICAgIHotaW5kZXg6IDMwMDA7XG59IFxuXG4uYm9keXtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luLXRvcDo4dmg7XG4gICAgZm9udC1zaXplOiAxLjJyZW07XG4gICAgcGFkZGluZzogMS41cmVtO1xuICAgIHotaW5kZXg6IDE7XG4gICAgbWFyZ2luLWJvdHRvbTogN3JlbTtcbiAgICBcbn1cbi5ibHVlLWdyYWRpZW50e1xuICAgIGNvbG9yOiAjNTE0QTlEO1xufVxuLmJ0bi1yb3VuZGVke1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG59XG4uY2VudGVyZWQge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgLyogYnJpbmcgeW91ciBvd24gcHJlZml4ZXMgKi9cbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICB3aWR0aDo1MCU7XG4gICAgei1pbmRleDogMTtcbn1cbi5sb2FkaW5nIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gICAgd2lkdGg6IDUwJTtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIFxuICAgIGFuZCAobWF4LXdpZHRoOiA2NDBweCksIFxuICAgIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2NjdweCksIFxuICAgIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA0ODBweClcbnsgXG4gICAgLmNlbnRlcmVke1xuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgIG1hcmdpbi10b3A6IDc3JTtcbiAgICAgICAgbGVmdDogNTAlO1xuICAgICAgICBtYXJnaW4tYm90dG9tOjIlO1xuICAgICAgICB3aWR0aDogOTUlO1xuICAgIH1cbn1cblxuIl19 */"
 
 /***/ }),
 
@@ -7177,8 +7504,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IReadingDetailComponent", function() { return IReadingDetailComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../services/reading/reading-service.service */ "./src/app/services/reading/reading-service.service.ts");
-/* harmony import */ var _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../models/reading/lessons.model */ "./src/app/models/reading/lessons.model.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _models_reading_i_reading_lesson_model__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../models/reading/i-reading/lesson.model */ "./src/app/models/reading/i-reading/lesson.model.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7203,57 +7530,79 @@ var IReadingDetailComponent = /** @class */ (function () {
             size: 1,
             num: 1
         };
-        this.lessons = new _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__["readingLessons"](null);
-        this.reading_config = [{
-                name: "health", content: "assets/data/reading/"
-            }];
+        this.oneLesson = new _models_reading_i_reading_lesson_model__WEBPACK_IMPORTED_MODULE_3__["oneLesson"](null);
+        // test
+        this.barChartLabels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+        this.barChartType = 'bar';
+        this.barChartLegend = true;
+        this.barChartData = [
+            { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
+            { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
+        ];
         route.params.subscribe(function (params) {
             _this.id = params['id'];
             _this.category = params['lesson'];
         });
     }
     IReadingDetailComponent.prototype.ngOnInit = function () {
-        console.log(this.id);
-        console.log(this.category);
-        for (var _i = 0, _a = this.reading_config; _i < _a.length; _i++) {
-            var entry = _a[_i];
-            this.loadLesson(entry.content);
-        }
+        this.countVisited = 0;
+        this.countRightAnswer = 0;
+        this.getOneLesson(this.id.toString());
     };
-    IReadingDetailComponent.prototype.ngOnChanges = function () {
-        //TODO: NEED TO DOUBLE CHECK SECURE FOR THIS.ID AND THIS.CATEGORY
-        for (var _i = 0, _a = this.reading_config; _i < _a.length; _i++) {
-            var entry = _a[_i];
-            this.loadLesson(entry.content);
-        }
-    };
-    IReadingDetailComponent.prototype.loadLesson = function (le) {
+    IReadingDetailComponent.prototype.getOneLesson = function (lessonId) {
         var _this = this;
-        var index = 0;
-        var url = le + "/" + this.category + "/" + this.category + ".json";
-        this.readingservice.get(url).subscribe(function (res) {
-            _this.lessons = new _models_reading_lessons_model__WEBPACK_IMPORTED_MODULE_2__["readingLessons"](res);
-            _this.lesson = _this.lessons.lessons;
-            for (var _i = 0, _a = _this.lesson; _i < _a.length; _i++) {
-                var entry = _a[_i];
-                if (entry.id === parseInt(_this.id) && entry.id !== 0) {
-                    _this.page.index = entry.id;
-                }
-            }
-            _this.page.num = _this.lessons.lessons.length;
-            //this.page.index= 0;
-            _this.page.size = 1;
-            _this.getlesson(_this.page.index);
+        this.loading = true;
+        this.reading = true;
+        this.visited = true;
+        this.readingservice.getLessonService(lessonId).subscribe(function (res) {
+            _this.loading = false;
+            _this.oneLesson = new _models_reading_i_reading_lesson_model__WEBPACK_IMPORTED_MODULE_3__["oneLesson"](res);
         });
     };
-    IReadingDetailComponent.prototype.getlesson = function (indexArr) {
-        this.lesson = (this.lessons.lessons) ? this.lessons.lessons.slice(indexArr, indexArr + this.page.size) : [];
+    IReadingDetailComponent.prototype.goPratice = function () {
+        this.reading = false;
+        this.page.num = this.oneLesson.questions.length;
+        this.arrayQuestions = this.oneLesson.questions.slice();
+        this.questions = this.arrayQuestions.slice(this.page.index, this.page.index + this.page.size);
+    };
+    IReadingDetailComponent.prototype.goRead = function () {
+        this.reading = true;
     };
     IReadingDetailComponent.prototype.goto = function (index) {
         if (index >= 0 && index < this.page.num) {
             this.page.index = index;
-            this.router.navigate(['/i-reading-detail/' + this.category + '/' + this.page.index], { relativeTo: this.route });
-            this.getlesson(this.page.index);
+            this.visited = true;
+            this.questions = this.oneLesson.questions.slice(index, index + this.page.size);
+        }
+    };
+    IReadingDetailComponent.prototype.getAnswer = function (lessionId, questionId, optionId) {
+        var _this = this;
+        this.countVisited++;
+        var arrayFilter = this.arrayQuestions.reduce(function (filtered, question) {
+            question.multipleChoices.forEach(function (el) {
+                if (questionId === question.questionId && el.id === optionId) {
+                    question['correct'] = el.answer;
+                    question['visited'] = true;
+                    debugger;
+                    _this.countRightAnswer = el.answer ? ++_this.countRightAnswer : _this.countRightAnswer;
+                }
+            });
+            filtered.push(question);
+            return filtered;
+        }, []);
+        this.questions = arrayFilter.slice(this.page.index, this.page.index + this.page.size);
+        debugger;
+        this.page.num = 2;
+        if (this.countVisited === this.page.num) {
+            //calculate the percentage
+            var percent = (this.countRightAnswer * 100) / this.page.num;
+            //call to server and update database
+            this.readingservice.updateGrade(lessionId, percent).subscribe(function (res) {
+                _this.router.navigate(['/i-reading-menu/' + res.categoryId]);
+            });
+        }
+        else {
+            this.goto(this.page.index + 1);
         }
     };
     IReadingDetailComponent = __decorate([
@@ -7263,8 +7612,8 @@ var IReadingDetailComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./i-reading-detail.component.scss */ "./src/app/reading/i-reading/i-reading-detail/i-reading-detail.component.scss")]
         }),
         __metadata("design:paramtypes", [_services_reading_reading_service_service__WEBPACK_IMPORTED_MODULE_1__["ReadingService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], IReadingDetailComponent);
     return IReadingDetailComponent;
 }());
@@ -7280,7 +7629,7 @@ var IReadingDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"center pt-15\">\n  <div *ngIf=\"loading === false\" class=\"container pb-4\">\n    <div class=\"row\">\n      <div class=\"col-4\">\n        <hr>\n      </div>\n      <div class=\"col-4 text-center\">\n          <h1>{{lessonCate}}</h1>\n        </div>\n        <div class=\"col-4\">\n            <hr>\n          </div>\n    </div>\n  </div>\n  <div  class=\"table-responsive \">\n      <img *ngIf=\"loading\" src=\"assets/images/Ripple.gif\" />\n      <table *ngIf=\"loading === false\" class=\"table\">\n        <thead class=\"primary-color-dark white-text\">\n          <tr>\n            <th>ID</th>\n            <th>Title</th>\n            <th>% Read</th>\n            <th>% Test</th>\n          </tr>\n        </thead>\n        \n        <tbody>\n          <tr mdbTableCol *ngFor=\"let lesson of lessonsArr\" class=\"title\" [routerLink]=\"['/i-reading-detail',lesson.category,lesson.id]\">\n            <th scope=\"row\">{{lesson.id}}</th>\n            <th >{{lesson.title}}</th>\n            <th>{{lesson.percentAssume}}%</th>\n            <th>{{lesson.percentActual}}%</th>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n</div>\n\n"
+module.exports = "<div class=\"center pt-15\">\n    <app-header></app-header>\n\n  <div *ngIf=\"loading === false\" class=\"container pb-4\">\n    <div class=\"row\">\n      <div class=\"col-4\">\n        <hr>\n      </div>\n      <div class=\"col-4 text-center\">\n          <h1>{{lessonCate}}</h1>\n        </div>\n        <div class=\"col-4\">\n            <hr>\n          </div>\n    </div>\n  </div>\n  <div  class=\"table-responsive \">\n      <img *ngIf=\"loading\" src=\"assets/images/Ripple.gif\" />\n      <table *ngIf=\"loading === false\" class=\"table\">\n        <thead class=\"primary-color-dark white-text\">\n          <tr>\n            <th>#</th>\n            <th>Title</th>\n            <th>Grade</th>\n          </tr>\n        </thead>\n        \n        <tbody>\n          <tr mdbTableCol *ngFor=\"let lesson of lessonsArr\" class=\"title\" [routerLink]=\"['/i-reading-detail',lesson.categoryId,lesson.lessonId]\">\n            <th>{{lesson.orderNum}}</th>\n            <th >{{lesson.title}}</th>\n            <th>{{lesson.grade}}</th>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -7325,6 +7674,7 @@ var IReadingMenuComponent = /** @class */ (function () {
         var _this = this;
         this.readingservice = readingservice;
         this.route = route;
+        this.config = "assets/configure/config.json";
         this.reading_config = [{
                 name: "health", content: "assets/data/reading/"
             }];
@@ -7335,14 +7685,24 @@ var IReadingMenuComponent = /** @class */ (function () {
     };
     IReadingMenuComponent.prototype.loadLesson = function (para) {
         var _this = this;
-        debugger;
+        //get the studentID from localStorage
+        var studentId = JSON.parse(localStorage.getItem('currentUser'));
         this.loading = true;
-        this.readingservice.getMenu(para).subscribe(function (res) {
-            debugger;
+        var categoryName;
+        this.readingservice.getMenu(para, studentId).subscribe(function (res) {
             if (res.length !== 0) {
-                _this.loading = false;
-                _this.lessonCate = res[0].category;
-                _this.lessonsArr = res;
+                _this.readingservice.get(_this.config).subscribe(function (response) {
+                    var hardCodeArr = response.content;
+                    var arrHardCode = hardCodeArr.slice();
+                    for (var index = 0; index < arrHardCode.length; index++) {
+                        if (arrHardCode[index].categoryId === res[0].categoryId) {
+                            categoryName = arrHardCode[index].categoryName;
+                        }
+                    }
+                    _this.loading = false;
+                    _this.lessonCate = categoryName;
+                    _this.lessonsArr = res;
+                });
             }
         });
     };
@@ -7369,7 +7729,7 @@ var IReadingMenuComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container pt-6\">\n    <div class=\"row\">\n      <div class=\"col-4\"><hr size=\"90\"></div>\n      <div class=\"col-4\"><h4 class=\"text-center text-info\">{{categories.title}}</h4></div>\n      <div class=\"col-4\"><hr size=\"90\"></div>\n    </div>\n    <div class=\"row pt-4\">\n      <div class=\"col-4 pb-4\" *ngFor=\"let cate of categoriesArr\">\n        <div class=\"thumbnail\">\n          <div [routerLink]=\"['/i-reading-menu',cate.id]\">\n              <img src=\"{{cate.src_img}}\" alt=\"\" class=\"img-fluid z-depth-2 img-thumbnail\">\n              <div class=\"caption\">\n                <h3>\n                    <h6 class=\"text-center text-info pt-3\">{{cate.title}}</h6>\n                </h3>\n              </div>\n          </div>\n        </div>\n      </div>\n    </div>\n</div>\n"
+module.exports = "<div class=\"container pt-6\">\n    <app-header></app-header>\n    <img class=\"loading\" *ngIf=\"loading\" src=\"assets/images/Ripple.gif\" />\n    <div class=\"row\">\n      <div *ngIf=\"!loading\" class=\"col-4\"><hr size=\"90\"></div>\n      <div class=\"col-4\"><h4 class=\"text-center text-info\">{{title}}</h4></div>\n      <div *ngIf=\"!loading\" class=\"col-4\"><hr size=\"90\"></div>\n    </div>\n    <div class=\"row pt-4\">\n      <div class=\"col-4 pb-4\" *ngFor=\"let cate of categoriesArr\">\n        <div class=\"thumbnail\">\n          <div [routerLink]=\"['/i-reading-menu',cate.categoryId]\">\n              <img src=\"{{cate.src_img}}\" alt=\"\" class=\"img-fluid z-depth-2 img-thumbnail\">\n              <div class=\"caption\">\n                <h3>\n                    <h6 class=\"text-center text-info pt-3\">{{cate.title}}</h6>\n                </h3>\n              </div>\n          </div>\n        </div>\n      </div>\n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -7380,7 +7740,7 @@ module.exports = "<div class=\"container pt-6\">\n    <div class=\"row\">\n     
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".pt-6 {\n  padding-top: 20vh; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQWlCLEVBQ3BCIiwiZmlsZSI6InNyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnB0LTZ7XG4gICAgcGFkZGluZy10b3A6IDIwdmg7XG59XG5cbiJdfQ== */"
+module.exports = ".pt-6 {\n  padding-top: 20vh; }\n\n.loading {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 50%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uZ29jdGhpbmhuZ3V5ZW4vRGVza3RvcC9ORy1FTkdMSVNIL3NyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQWlCLEVBQ3BCOztBQUVEO0VBQ0ksZUFBYztFQUNkLGtCQUFpQjtFQUNqQixtQkFBa0I7RUFDbEIsV0FBVSxFQUNiIiwiZmlsZSI6InNyYy9hcHAvcmVhZGluZy9pLXJlYWRpbmcvaS1yZWFkaW5nLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnB0LTZ7XG4gICAgcGFkZGluZy10b3A6IDIwdmg7XG59XG5cbi5sb2FkaW5nIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gICAgd2lkdGg6IDUwJTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -7425,9 +7785,13 @@ var IReadingComponent = /** @class */ (function () {
     };
     IReadingComponent.prototype.loadMenu = function (entry) {
         var _this = this;
-        this.readingservice.get(entry).subscribe(function (res) {
+        var levelId = 'RI';
+        this.loading = true;
+        this.readingservice.getCategories(levelId).subscribe(function (res) {
+            _this.loading = false;
             _this.categories = new _models_reading_i_reading_categories_model__WEBPACK_IMPORTED_MODULE_2__["categories"](res);
-            _this.categoriesArr = _this.categories.content;
+            _this.title = 'Categories';
+            _this.categoriesArr = _this.categories.response;
         });
     };
     IReadingComponent = __decorate([
@@ -7658,7 +8022,8 @@ var authenticationService = /** @class */ (function () {
         this.http = http;
     }
     authenticationService.prototype.login = function (username, password) {
-        return this.http.post('https://pure-tor-72835.herokuapp.com/users/login', {
+        //return this.http.post<any>('https://pure-tor-72835.herokuapp.com/users/login', {
+        return this.http.post('http://localhost:3000/users/login', {
             username: username,
             password: password
         }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (user) {
@@ -7666,7 +8031,8 @@ var authenticationService = /** @class */ (function () {
                 return user;
             }
             else if (user && user.message.token) {
-                localStorage.setItem('currentUser', JSON.stringify(user));
+                debugger;
+                localStorage.setItem('currentUser', user.message.studentId);
             }
             return user;
         }));
@@ -7723,6 +8089,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __assign = (undefined && undefined.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7738,29 +8112,81 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var ReadingService = /** @class */ (function () {
     function ReadingService(http) {
         this.http = http;
+        this.hardCodeArr = [];
     }
     ReadingService.prototype.get = function (url) {
         return this.http.get(url);
     };
-    ReadingService.prototype.getMenu = function (cate) {
-        debugger;
-        return this.http.post('https://pure-tor-72835.herokuapp.com/menu/category', {
-            category: cate
+    ReadingService.prototype.getCategories = function (levelId) {
+        return this.http.post('http://localhost:3000/categories/category', {
+            levelId: levelId
         }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (result) {
-            if (result.status === 'not found') {
+            if (result.status === "error" || result.status === "false") {
                 return [];
             }
-            else if (result.status === 'ok') {
-                debugger;
-                var responseArr = [];
-                for (var _i = 0, _a = result.response; _i < _a.length; _i++) {
-                    var element = _a[_i];
-                    if (element.category === cate) {
-                        responseArr.push(element);
-                    }
-                }
-                return responseArr;
+            else {
+                return result.response;
             }
+        }));
+    };
+    ;
+    ReadingService.prototype.getCategoryName = function (categoryId) {
+        var _this = this;
+        this.get(categoryId).subscribe(function (res) {
+            _this.hardCodeArr = res.content;
+        });
+    };
+    ReadingService.prototype.getLessonService = function (lessonId) {
+        debugger;
+        return this.http.post('http://localhost:3000/lesson/getLesson', {
+            lessonId: lessonId
+        }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (result) {
+            var res = __assign({}, result);
+            return res;
+        }));
+    };
+    ReadingService.prototype.getMenu = function (cate, studentId) {
+        debugger;
+        //return this.http.post<any>('https://pure-tor-72835.herokuapp.com/lessons/category', {
+        return this.http.post('http://localhost:3000/lessons/getLessons', {
+            categoryId: cate,
+            studentId: studentId
+        }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (result) {
+            var responseArr = [];
+            var response = result.response.slice();
+            for (var i = 0; i < response.length; i++) {
+                if (response[i].grades.length === 0) {
+                    var obj = {
+                        orderNum: i,
+                        categoryId: response[i].categoryId,
+                        title: response[i].title,
+                        lessonId: response[i].lessonId,
+                        grade: '0%'
+                    };
+                    responseArr.push(obj);
+                }
+                else {
+                    var obj = {
+                        orderNum: i,
+                        categoryId: response[i].categoryId,
+                        title: response[i].title,
+                        lessonId: response[i].lessonId,
+                        grade: response[i].grades[response[i].grades.length - 1] + '%'
+                    };
+                    responseArr.push(obj);
+                }
+            }
+            return responseArr;
+        }));
+    };
+    ReadingService.prototype.updateGrade = function (lessonId, grade) {
+        var studentId = localStorage.getItem('currentUser');
+        return this.http.post('http://localhost:3000/lessons/updateLesson', {
+            lessonsId: lessonId,
+            studentId: studentId,
+            grade: grade
+        }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (result) {
+            return result.result;
         }));
     };
     ReadingService = __decorate([
@@ -7856,7 +8282,8 @@ var UserService = /** @class */ (function () {
         return this.http.get('./users/users/' + id);
     };
     UserService.prototype.register = function (user) {
-        return this.http.post('https://pure-tor-72835.herokuapp.com/users/register', user);
+        //return this.http.post<any>('https://pure-tor-72835.herokuapp.com/users/register', user);
+        return this.http.post('http://localhost:3000/users/register', user);
     };
     UserService.prototype.update = function (user) {
         return this.http.put('/user/users' + user.id, user);
